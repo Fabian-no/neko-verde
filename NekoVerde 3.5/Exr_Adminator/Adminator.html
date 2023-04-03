@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Adminator</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="stylesheet" href="icons/css/fontello.css">
+  <link rel="stylesheet" href="Adminator.css">
+</head>
+
+<!-- https://colorlib.com/polygon/adminator/index.html -->
+
+<body>
+<!-- side-bar -->
+  <div id="Side-bar" class="side-bar d-block">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+      <span class="title font-weight-bold">Adminator</span>
+      <span id="B-Close" class="d-lg-none">&times;</span>
+    </div>
+    <ul class="nav flex-column flex-nowrap">
+      <li class="nav-item mt-4 mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-success">#</span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-warning">@</span>
+          <span class="title">Email</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-info">~</span>
+          <span class="title">Compose</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-danger">%</span>
+          <span class="title">Calendar</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-success">*</span>
+          <span class="title">Chat</span>
+        </a>
+      </li>
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-warning">&</span>
+          <span class="title">Charts</span>
+        </a>
+      </li>  
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-info">&timesbar;</span>
+          <span class="title">Forms</span>
+        </a>
+      </li>  
+      <li class="nav-item mb-2 w-100">
+        <a class="nav-link w-100" href="#">
+          <span class="icon text-center mr-3 text-danger">&eDDot;</span>
+          <span class="title">UI Elements</span>
+        </a>
+      </li>  
+    </ul>
+  </div>
+
+<!-- page-Cont -->
+  <div class="page-Cont">
+  <!-- header -->
+    <header class="header navbar px-0">
+      <div class="container-fluid">
+        <div class="d-flex flex-row">
+          <a id="B-Menu" class="icon-menu px-2 d-lg-none" href="#"></a>
+          <a class="icon-search px-2" href="#"></a>
+        </div>
+        <div class="d-flex flex-row">
+          <a class="icon-bell px-2" href="#"></a>
+          <a class="icon-mail px-2" href="#"></a>
+          <a class="px-2" href="#">
+            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+            <span>John Doe</span>
+          </a>
+        </div>  
+      </div>
+    </header>
+    <script>
+      var B_Menu = document.getElementById("B-Menu"),
+          Side_Bar = document.getElementById("Side-bar"),
+          B_Close = document.getElementById("B-Close");
+
+      B_Menu.onclick = () =>{
+        Side_Bar.style.width = "280px";
+      }
+      B_Close.onclick = () =>{
+        Side_Bar.style.width = "0px";
+      }
+      window.onresize = () =>{
+        if(window.innerWidth < 992) Side_Bar.style.width = "0px";
+        else Side_Bar.style.width = "70px";
+      }
+    </script>
+  <!-- main -->
+    <main class="w-100 pb-4 d-flex flex-wrap">
+    <!-- section1 -->
+      <section class="col-12 mb-3 d-flex flex-wrap">
+
+        <div class="col-12 col-md-3 px-2 mt-3">
+          <div class="bd p-3 bg-white">
+            <div class="w-100 mb-3">Total Visits</div>
+            <div class="w-100 mb-1 d-flex justify-content-between">
+              <div>
+                <img src="img/grafico-lineas.png">
+              </div>
+              <span class="badge badge-pill badge-success px-3 py-2">+10%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 px-2 mt-3">
+          <div class="bd p-3 bg-white">
+            <div class="w-100 mb-3">Total Visits</div>
+            <div class="w-100 mb-1 d-flex justify-content-between">
+              <div>
+                <img src="img/grafico-lineas.png">
+              </div>
+              <span class="badge badge-pill badge-danger px-3 py-2">-7%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 px-2 mt-3">
+          <div class="bd p-3 bg-white">
+            <div class="w-100 mb-3">Total Visits</div>
+            <div class="w-100 mb-1 d-flex justify-content-between">
+              <div>
+                <img src="img/grafico-lineas.png">
+              </div>
+              <span class="badge badge-pill bg-purple text-white px-3 py-2">~12%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3 px-2 mt-3">
+          <div class="bd p-3 bg-white">
+            <div class="w-100 mb-3">Total Visits</div>
+            <div class="w-100 mb-1 d-flex justify-content-between">
+              <div>
+                <img src="img/grafico-lineas.png">
+              </div>
+              <span class="badge badge-pill bg-light-blue text-white px-3 py-2">33%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- section2 -->
+      <section class="col-12 mb-3">
+        <div class="w-100 bd bg-white">
+          <!-- mapa -->
+          <div class="w-100 p-2">
+            <img class="w-100" src="img/mapa.jpg" alt="">
+          </div>
+          <!-- progress bars -->
+          <div class="px-2">
+  
+            <div class="w-100 p-3">
+              <h5>100k</h5>
+              <small>Visitors From USA</small>
+              <span class="float-right">50%</span>
+              <div class="progress my-2">
+                <div class="progress-bar bg-purple" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
+              </div>
+            </div>
+             
+            <div class="w-100 p-3">
+              <h5>1M</h5>
+              <small>Visitors From Europe</small>
+              <span class="float-right">80%</span>
+              <div class="progress my-2">
+                <div class="progress-bar bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+              </div>
+            </div>
+            
+            <div class="w-100 p-3">
+              <h5>450k</h5>
+              <small>Visitors From Australia</small>
+              <span class="float-right">40%</span>
+              <div class="progress my-2">
+                <div class="progress-bar bg-light-blue" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:40%"></div>
+              </div>
+            </div>
+             
+            <div class="w-100 p-3">
+              <h5>1B</h5>
+              <small>Visitors From India</small>
+              <span class="float-right">90%</span>
+              <div class="progress my-2">
+                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- circles -->
+          <div class="w-100 px-3">
+            <div class="bdt py-4 d-flex flex-wrap justify-content-between">
+  
+              <div class="p-1 d-flex flex-column align-items-center">
+                <div style="width: 80px; height: 80px">
+                  <div class="circle-bar d-flex flex-row justify-content-center align-items-center">
+                    <span>75%</span>
+                  </div>
+                </div>
+                <h6>New Users</h6>
+              </div>
+  
+              <div class="p-1 d-flex flex-column align-items-center">
+                <div style="width: 80px; height: 80px">
+                  <div class="circle-bar d-flex flex-row justify-content-center align-items-center">
+                    <span>50%</span>
+                  </div>
+                </div>
+                <h6>New Purchases</h6>
+              </div>
+  
+              <div class="p-1 d-flex flex-column align-items-center">
+                <div style="width: 80px; height: 80px">
+                    <div class="circle-bar d-flex flex-row justify-content-center align-items-center">
+                      <span>90%</span>
+                    </div>
+                </div>
+                <h6>Bounce Rate</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+    
+      <div class="row">
+        
+      </div>
+    <!-- section3 -->
+      <section class="col-md-6 mb-3"> 
+        <div class="bd bg-white">
+
+          <div class="w-100 p-4">
+            <h6>Sales Report</h6>
+          </div>
+
+          <div class="w-100 p-4 d-flex justify-content-between align-items-center bg-light-blue text-white">
+            <div>
+              <h5>November 2017</h5>
+              <p>Sales Report</p>
+            </div> 
+            <div class="mr-4">
+              <h3>$6,000</h3>
+            </div>
+          </div>
+
+          <div class="p-3">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="bdwT-0">Name</th>
+                  <th class="bdwT-0">Status</th>
+                  <th class="bdwT-0">Date</th>
+                  <th class="bdwT-0">Price</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Item #1 Name</td>
+                  <td>
+                    <span class="badge badge-pill badge-success">Unavailable</span>
+                  </td>
+                  <td>Nov 18</td>
+                  <td>
+                    <span class="text-success">$12</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Item #2 Name</td>
+                  <td>
+                    <span class="badge badge-pill badge-info">New</span>
+                  </td>
+                  <td>Nov 18</td>
+                  <td>
+                    <span class="text-success">$34</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Item #3 Name</td>
+                  <td>
+                    <span class="badge badge-pill badge-info">New</span>
+                  </td>
+                  <td>Nov 18</td>
+                  <td>
+                    <span class="text-danger">-$45</span>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>Item #4 Name</td>
+                  <td>
+                    <span class="badge badge-pill badge-success">Unavailable</span>
+                  </td>
+                  <td>Nov 18</td>
+                  <td>
+                    <span class="text-success">$65</span>
+                  </td>
+                </tr>
+                
+                <tr>
+                  <td>Item #5 Name</td>
+                  <td>
+                    <span class="badge badge-pill badge-warning">Used</span>
+                  </td>
+                  <td>Nov 18</td>
+                  <td>
+                    <span class="text-danger">-$88</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    
+    <!-- section 4 -->
+      <section class="col-md-6 mb-3"> 
+        <div class="bd bg-white p-3">
+          <div>
+            <h6>Todo List</h6>
+          </div>
+
+          <div>
+            <div class="p-3">
+              <input type="checkbox" id="input1" name="CheckBox">
+              <label for="input1">
+                <span class="ml-2">Call John for Dinner</span>
+              </label>
+            </div>
+            
+            <div class="p-3">
+              <input type="checkbox" id="input1" name="CheckBox">
+              <label for="input1">
+                <span class="ml-2">Book Boss Flight</span>
+              </label>
+              <span class="badge badge-pill badge-success px-2 py-1 float-right">2 days</span>
+            </div>
+            
+            <div class="p-3">
+              <input type="checkbox" id="input1" name="CheckBox">
+              <label for="input1">
+                <span class="ml-2">Hit the Gym</span>
+              </label>
+              <span class="badge badge-pill badge-danger px-2 py-1 float-right">3 minutes</span>
+            </div>
+            
+            <div class="p-3">
+              <input type="checkbox" id="input1" name="CheckBox">
+              <label for="input1">
+                <span class="ml-2">Give Purchase Report</span>
+              </label>
+              <span class="badge badge-pill badge-warning px-2 py-1 float-right">not important</span>
+            </div>
+            
+            <div class="p-3">
+              <input type="checkbox" id="input1" name="CheckBox">
+              <label for="input1">
+                <span class="ml-2">Watch Game of Thrones Episode</span>
+              </label>
+              <span class="badge badge-pill badge-info px-2 py-1 float-right">Tomorrow</span>
+            </div>
+            
+            <div class="p-3">
+              <input type="checkbox" id="input1" name="CheckBox">
+              <label for="input1">
+                <span class="ml-2">Give Purchase report</span>
+              </label>
+              <span class="badge badge-pill badge-success px-2 py-1 float-right">Done</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

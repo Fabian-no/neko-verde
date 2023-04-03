@@ -1,0 +1,274 @@
+
+/* ---- GATO ---- */
+.Gato{
+  position: absolute;
+  transform: scale(.27) rotateY(180deg);
+  /* top: 20%; */
+  top: -26%;
+  left: 67%;
+  z-index: 19;
+  opacity: 1;
+  -webkit-clip-path: ellipse(136px 105px at 60px 22px);
+          clip-path: ellipse(136px 105px at 60px 22px);
+}
+/* @media (max-height: 430px){
+  .Gato{
+    transform: scale(.189) rotateY(180deg);
+  }
+} */
+
+.raya{
+  position: absolute;
+  background: #3b6e23;
+  height: 4px;
+}
+.cabeza, 
+.cuerpo, 
+.cola1, 
+.ojo{
+  border-color: #3b6e23;
+}
+.cabeza, 
+.cuerpo-fondo,
+.or-D{
+  background: #ffffff;
+}
+.ojo{
+  background: #ccc932;
+  background: #ccc932d7;
+}  
+.bigote{
+  position: absolute;
+  background: #275315;
+  opacity: .5;
+  height: 2px;
+}
+.Sombra{
+  background: #00000067;
+  opacity: .8;
+  box-shadow: 0px 0px 4px #2e2e2e;
+  box-shadow: 0px 0px 5px #242424d8;
+}
+
+
+
+
+/*---  Cuerpo posiciones ---*/
+/*orejas*/
+.cont-orejas{
+  position: absolute;
+  top: 58px;
+  left: 49px;
+  z-index: -3;
+}
+.oreja1{
+  position: absolute;
+  top: -58px;
+  left: -20px;
+  transform: rotate(0deg);
+}
+.oreja2{
+  position: absolute;
+  top: -58px;
+  left: 24px;
+  transform: rotate(0deg);
+}
+.or-D{/*or diagonal */
+  position: absolute;
+  border-top: 4px solid #3b6e23;
+  -webkit-clip-path: polygon(100% 0px, 10px 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0px, 10px 100%, 0 100%, 0 0);
+  height: 20px;
+  width: 31px;
+  top: 9px;
+  left: -18px;
+  transform: rotate(-50deg);
+}
+.or-V{/*or vertical*/
+  width: 4px;
+  height: 26px;
+  top: 0px;
+  left: 0px;
+}
+
+/* cabeza*/
+.cabeza{
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  /* background: #9c2121; */
+  width: 82px;
+  height: 68px;
+  top: 24px;
+  left: 8px;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, calc(100% - 4px) 72%, 61% calc(100% - 4px), 61% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 72%, calc(100% - 4px) 72%, 61% calc(100% - 4px), 61% 100%, 0 100%);
+  overflow: hidden;
+}
+/* ojos*/
+.cont-ojos{
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  top: 8px;
+  left: -2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.ojo{
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  height: 2px;
+  width: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pupila{
+  position: relative;
+  width: 4px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+  top: calc(-10px + 50%);
+  left: 8px;
+}
+/* bigotes*/
+.cont-bigotes{
+  position: absolute;
+  top: 59px;
+  left: 50px;
+}
+
+/* cuerpo*/
+.cuerpo{
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  width: 100px;
+  height: 144px;
+  top: 72px;
+  left: 42px;
+  z-index: -3;
+  opacity: 1;
+  -webkit-clip-path: polygon(38px 0, 100px 0, 100px 112px, 95px 112px, 95px 140px, 100px 140px, 100px 144px, 0 144px, 0 20px, 4px 20px, 38px 4px);
+          clip-path: polygon(38px 0, 100px 0, 100px 112px, 95px 112px, 95px 140px, 100px 140px, 100px 144px, 0 144px, 0 20px, 4px 20px, 38px 4px);
+}
+.cuerpo-fondo{
+  position: absolute;
+  height: 142px;
+  width: 98px;
+  top: 73px;
+  left: 43px;
+  z-index: -8;
+}
+/* pata */
+.pata{
+  width: 72px;
+  top: 172px;
+  left: 24px;
+  transform: rotate(90deg);
+  z-index: -3;
+}
+/* cola  */
+.cola1{
+  border-width: 4px;
+  border-style: solid;
+  background: #ffffff00; 
+  width: 63px;
+  height: 37px;
+  border-radius: 50%;
+  top: 197px;
+  left: 96px;
+  z-index: -3;
+  -webkit-clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
+}
+.cola2{
+  width: 34px;
+  top: 230px;
+  left: 96px;
+  transform: rotate(0deg);
+} 
+/* cola movible*/
+.c8{
+  width: 20px;
+  top: 230px;
+  left: 76px;
+  transform: rotate(0deg);
+} 
+.c9{
+  width: 20px;
+  top: 230px;
+  left: 56px;
+  transform: rotate(0deg);
+} 
+.c10{
+  width: 6px;
+  top: 230px;
+  left: 50px;
+  transform: rotate(0deg);
+} 
+
+/*bigotes cont...*/
+.big1{
+  width: 28px;
+  top: 7px;
+  left: -54px;
+  transform: rotate(15deg);
+}
+.big2{
+  width: 28px;
+  top: 15px;
+  left: -56px;
+}
+.big3{
+  width: 28px;
+  top: 23px;
+  left: -54px;
+  transform: rotate(-15deg);
+}
+
+.big4{
+  width: 30px;
+  top: 7px;
+  left: -6px;
+  transform: rotate(-15deg);
+}
+.big5{
+  width: 30px;
+  top: 15px;
+  left: -4px;
+}
+.big6{
+  width: 30px;
+  top: 23px;
+  left: -6px;
+  transform: rotate(15deg);
+}
+
+/*--- sombra ---*/
+.Sombra-gato{
+  position: absolute;
+  width: 150px;
+  height: 30px;
+  border-radius: 50%;
+  z-index: 17;
+  bottom: -280px;
+  left: -25px;
+  /* opacity: .8; */
+  opacity: 0;
+}
+@media (max-height: 430px){
+  .Sombra-gato{
+    bottom: -210px;
+    left: -35px;
+    transform: scale(.8);
+  }  
+}
+
+/*---  fin - Cuerpo posiciones ---*/
+

@@ -1,0 +1,180 @@
+/*------- NAV -------*/
+.Caja-nav-T{
+  width: 100%;
+  height: auto;
+  z-index: 110;
+}
+.Nav-T{
+  background-color: #122416;
+  width: 100%;
+  height: 80px;
+}
+.nav-scroll{
+  max-width: 1690px;
+  position: fixed;
+  height: 60px;
+  left: 0;
+  top: 0;
+  opacity: .9;
+}
+.Nav-T>.Logo{
+  padding: 0px 0px;
+  margin: 0 0px;
+}
+.Logo{
+  height: 100%;
+}
+.logo-scroll{
+  height: 115%;
+  width: auto;
+}
+.Logo>img{
+  height: 100%;
+  width: auto;
+}
+/*--- Menu-T  ---*/
+.Menu-T{
+  height: 60px;
+  padding-right: 60px;
+}
+.Menu-T>li{
+  height: 100%;
+}
+.Menu-T>li>a{
+  position: relative;
+  color: #ada58c;
+  font-size: 15px;
+  line-height: 59px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 0px 20px;
+  margin: 0px 0;
+}
+.Menu-T>li:last-child>a{
+  color: #609958;
+}
+
+/*--- Menu-R  ---*/
+.Nav-R{
+  z-index: 500;
+}
+.Menu-R{
+  background-color: #080f0a;
+  width: 250px;
+  height: 100vh;
+  top: 0;
+  right: -250px; 
+  padding-top: 80px;
+}
+.Menu-R>li{
+  border-top: 1px solid #c0bcb018;
+}
+.Menu-R>li:last-child{
+  border-bottom: 1px solid #c0bcb018;
+}
+.Menu-R>li>a{
+  width: 100%;
+  color: #ada58c;
+  font-size: 15px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 0px 25px;
+}
+.Menu-R>li:last-child>a{
+  color: #609958;
+}
+/*--- HOVER MENUS ---*/
+.Menu-T>li>a:hover, 
+.Menu-R>li>a:hover{
+  color: #eee3bb;
+}
+.Menu-T>li:last-child>a:hover, 
+.Menu-R>li:last-child>a:hover{
+  color: #a1ee97;
+}
+
+/*--- Boton-T  ---*/
+.Boton-T{
+  display: none;
+  padding: 5px;
+  width: 40px;
+  cursor: pointer;
+  top: 26px;
+  right: 3%;
+}
+.Boton-T>.raya{
+  height: 1px;
+  background-color: #eee3bb;
+}
+.Boton-T>.raya-mid{
+  margin: 8px 0;
+}
+/*--- Boton-R  ---*/
+.Boton-R{
+  display: block;
+  padding: 5px;
+  width: 40px;
+  cursor: pointer;
+  top: 26px;
+  right: 13%;
+  z-index: 300;
+}
+.Boton-R>.raya{
+  height: 1px;
+  background-color: #75da3e;
+  
+}
+.Boton-R>.raya-mid{
+  margin: 8px 0;
+}
+.botones-scroll{
+  top: 16px;
+}
+
+/*---  @media - NAV  ---*/
+@media screen and (max-width: 1239px){
+  .Boton-T{
+    display: block;
+  }
+  .Nav-T>.Menu-T{
+    display: none; 
+  }
+  /* Sombra */
+  .Sombra-nav-R{
+    display: none;
+    position: fixed;
+    background: #080808c0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 499;
+  }
+}
+@media screen and (max-width: 767px){
+  .Nav-T{
+    height: 60px;
+  }
+  .Logo{
+    height: 115%;
+    width: auto;
+  }
+  .Boton-T, .Boton-R{
+    top: 16px;
+  }
+  .Menu-R{
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-height: 387px){
+  .Menu-R>li>a{
+    line-height: 40px;
+  }
+} 
+@media screen and (max-height: 325px){
+  .Menu-R>li>a{
+    line-height: 30px;
+  }
+}   

@@ -1,0 +1,379 @@
+   /*--- pagina 1 - HOME ---*/
+
+/*--- HOME(1) - HEADER ---*/
+.CF-Resp{
+  width: 100%;
+  height: calc(100vh - 80px);
+  top: 0;
+  left: 0;
+}
+.CF-Resp>.Foto{
+  position: absolute;
+  height: calc(100vh - 80px);
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+}
+.CF-Resp>.Hm-F4{
+  background-image: url('img/garden-pic4_1920x1079.jpg');
+}
+.CF-Resp>.Hm-F3{
+  background-image: url('img/garden-pic3_1920x1079.jpeg');
+}
+.CF-Resp>.Hm-F2{
+  background-image: url('img/garden-pic2_1920x1079.jpeg');
+}
+.CF-Resp>.Hm-F1{
+  background-image: url('img/garden-pic1_1920x1079.jpg');
+}
+
+.Wrap-Hdr>.Titulo{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #122416;
+  color: #e8dbae;
+}
+.Wrap-Hdr>.Titulo>h2{
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+
+
+/*Name-Box*/
+.CF-Resp>.Foto>.Box{
+  position: absolute;
+  bottom: 10%;
+  right: -250px;
+  z-index: 100;
+  opacity: 0;
+}
+
+.CF-Resp>.Foto>.Box>a .View{
+  background: #e8dbae;
+  color: #4d493f;
+  padding: 5px 0px;
+  width: 75%;
+}
+.CF-Resp>.Foto>.Box>a .View>p{
+  font-family: "Lora", Arial, Tahoma, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.CF-Resp>.Foto>.Box>a>.Name{
+  background: #122416;
+  padding: 10px 25px;
+}
+.CF-Resp>.Foto>.Box>a>.Name>h5, 
+.CF-Resp>.Foto>.Box>a>.Name>h6{
+  background: #fff8dc00;
+  color: #e8dbae;
+  margin: 0;
+}
+
+
+/*--- @media - HOME(1) - HEADER ---*/
+
+@media (max-width: 767px){
+  .CF-Resp{
+    height: calc(100vh - 60px);
+  }  
+  .CF-Resp>.Foto{
+    height: calc(100vh - 60px);
+  }
+}
+@media (max-width: 480px){
+  .CF-Resp{
+    height: calc(100vh - 60px - 70px);
+  }  
+  .CF-Resp>.Foto{
+    height: calc(100vh - 60px - 70px);
+  }
+  .Wrap-Hdr>.Titulo{
+    height: 70px;
+  }  
+}
+/*-- animacion - fotos --*/
+@keyframes header_slider{
+  0%, 22%{opacity: 1;}
+  25%, 97%{opacity: 0;}
+  98%, 100%{opacity: 1;}  
+}
+.anim-header_slider{
+  animation: header_slider 30s infinite linear;
+}
+.CF-Resp>.Hm-F2{
+  animation-delay: 7.5s;
+}
+.CF-Resp>.Hm-F3{
+  animation-delay: 15s;
+}
+.CF-Resp>.Hm-F4{
+  animation-delay: 22.5s;
+}
+
+/*-- animacion - Box --*/
+@keyframes header_box{
+  0%, 2%{right: -300px; opacity: 0;}
+  4% , 18%{right: 85px; opacity: .93;}
+  20%, 100%{right: -300px; opacity: 0;} 
+}
+.anim-header_box{
+  animation: header_box 30s infinite linear;
+}
+.CF-Resp>.Hm-F2>.Box{
+  animation-delay: 7.5s;
+}
+.CF-Resp>.Hm-F3>.Box{
+  animation-delay: 15s;
+}
+.CF-Resp>.Hm-F4>.Box{
+  animation-delay: 22.5s;
+}
+
+@media (max-width: 959px){
+  @keyframes header_box{
+    0%, 2%{right: -300px; opacity: 0;}
+    4% , 18%{right: 65px; opacity: .93;}
+    20%, 100%{right: -300px; opacity: 0;} 
+  }
+}
+@media (max-width: 480px){
+  @keyframes header_box{
+    0%, 2%{right: -300px; opacity: 0;}
+    4% , 18%{right: 15px; opacity: .93;}
+    20%, 100%{right: -300px; opacity: 0;} 
+  }
+}  
+
+
+
+
+
+/*--- HOME(1) - SECTION 1 ---*/
+.HmS1{
+  padding-bottom: 150px;
+  top: 60px;
+}
+
+/*--- Wrap1 ---*/
+.HmS1-Wrap1{
+  padding-top: 150px; 
+}
+.HmS1-Wrap1>.Caja-h1{
+  width: 63%;
+  padding: 7% 5%;
+  background: #13361a;
+  top: -40px;
+  left: 0;
+}
+.HmS1-Wrap1>.Caja-h1>h1{
+  color: #f3eac9;
+  margin: 0;
+}
+.HmS1-Wrap1>.Caja-texto{
+  width: 47%;
+  padding-left: 2.4%;
+  padding-right: 2.4%;
+  padding-bottom: 5%;
+}
+.HmS1-Wrap1>.Caja-texto>h5{
+  margin-bottom: 7%;
+}
+.HmS1-Wrap1>.Caja-foto{
+  width: 53%;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+}
+
+/*--- Wrap2 ---*/
+.HmS1-Wrap2{
+  padding-top: 60px; 
+}
+.HmS1-Wrap2>.Caja-sep{
+  width: 55%;
+  padding: 5% 0;
+  background: #13361a;
+  top: -20px;
+  right: 3%;
+}
+.HmS1-Wrap2>.Caja-texto{
+  width: 49%;
+  padding-left: 4%;
+  padding-right: 2.4%;
+  padding-bottom: 5%;
+}
+.HmS1-Wrap2>.Caja-texto>h5{
+  margin-bottom: 7%;
+}
+.HmS1-Wrap2>.Caja-foto{
+  width: 51%;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+}
+/*--- @media - HOME(1) - SECTION 1 ---*/
+@media (max-width: 1239px){
+  .HmS1-Wrap2{
+    padding-top: 50px; 
+  }
+  .HmS1-Wrap2>.Caja-texto{
+    padding-bottom: 2%;
+  }
+}  
+@media (max-width: 959px){
+  .HmS1-Wrap1>.Caja-texto{
+    padding-bottom: 0%;
+  }
+  .HmS1-Wrap2{
+    padding-top: 40px; 
+  }
+  .HmS1-Wrap2>.Caja-texto{
+    padding-bottom: 0%;
+  }
+}
+@media (max-width: 767px){
+  .HmS1{
+    padding-bottom: 10px;
+    top: -40px;
+  }
+  .HmS1-Wrap{
+    display: block;
+  }
+  .HmS1-Wrap1{
+    padding-top: 60px; 
+  }
+  .HmS1-Wrap1>.Caja-h1{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 50px 34px;
+    left: 0px;
+    top: 20px;
+  }
+  .HmS1-Wrap>.Caja-foto{
+    width: 100%;
+  }
+  .HmS1-Wrap>.Caja-foto>img{
+    position: relative;
+    float: right;
+    width: 70%;
+    top: 0;
+  }
+  .HmS1-Wrap2>.Caja-foto>img{
+    float: left;
+  } 
+  .HmS1-Wrap1>.Caja-texto{
+    width: 100%;
+    padding: 5% 10% 5%;
+  }
+  .HmS1-Wrap2>.Caja-sep{
+    height: 10%;
+    padding: 0;
+    top: 0px;
+    right: 5%;
+  }
+  .HmS1-Wrap2>.Caja-foto{
+    margin-top: 0px;
+  }
+  .HmS1-Wrap2>.Caja-texto{
+    width: 100%;
+    padding: 5% 10% 6%;
+  }
+}
+@media (max-width: 480px){
+  .HmS1-Wrap1>.Caja-h1{
+    display: inline-block;
+    width: calc(100% - 30px);
+    padding: 30px 34px 40px;
+  }  
+  .HmS1-Wrap>.Caja-foto>img{
+    width: 80%;
+  }
+}
+
+
+
+
+
+
+
+/*--- HOME(1) - SECTION 2 ---*/
+.HmS2{
+  background-image: url(img/home-background1_1920x1440.jpg);
+  padding: 100px 0 100px;
+  overflow: hidden;
+}
+.HmS2>.Gal>.Base{
+  position: relative;
+  width: 50%;
+  height: 10%;
+  opacity: 0;
+  left: calc(50% - 320px);
+  top: 0;
+}
+.HmS2>.Gal>.Foto{
+  position: absolute;
+  width: 50%;
+  left: calc(50% - 320px);
+  top: 0;
+}
+.HmS2>.Gal>.G1{
+  left: calc(25% - 110%);
+}
+.HmS2>.Gal>.G2{
+  left: calc(25% - 55%);
+}
+.HmS2>.Gal>.G3{
+  left: calc(25%);
+}
+.HmS2>.Gal>.G4{
+  left: calc(25% + 55%);
+}
+.HmS2>.Gal>.G5{
+  left: calc(25% + 110%);
+}
+/*
+.FotoGoLeft{
+  left: -85%!important;
+}
+.FotoGoRight{
+  left: 135%!important;
+}
+*/
+
+.HmS2>.Gal>.boton{
+  width: 40px;
+  height: 40px;
+  color: #103317;
+  top: calc(50% - 20px);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+.HmS2>.Gal>.b-back{
+  left: 0;
+}
+.HmS2>.Gal>.b-fwrd{
+  right: 0;
+}
+
+/*--- @media - HOME(1) - SECTION 2 ---*/
+@media (max-width: 767px){
+  .HmS2{
+    padding: 70px 0 70px;
+  }
+}
+@media (max-width: 480px){
+  .HmS2{
+    padding: 50px 0 50px;
+  }
+}

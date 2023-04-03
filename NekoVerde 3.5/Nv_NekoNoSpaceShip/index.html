@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>N{v} - Neko no SpaceShip</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="stylesheet" href="fontello/css/fontello.css">
+  <link rel="stylesheet" href="ovni.css">
+</head>
+<body>
+<!-- MENU-MAIN -->
+  <div id="menu_main" class="full-page_flex">
+    <h2 class="title">Neko no SpaceShip</h2>
+    <ul>
+      <!-- <li>
+        <a href="#" class="btt_Mode">Keyboard</a>
+        <a href="#" class="btt_Mode">Touch<img src="img/rotate_mobile.png"></a>
+      </li> -->
+      <li>
+        <a href="#" id="btt_mControlsON" class="btt_mON btt_mControls">Controls</a></li>
+      <li>
+        <a href="#" id="btt_mEnemiesON" class="btt_mON btt_mEnemies">Enemies</a></li>
+      <li>
+        <a href="#" id="btt_mLevelON" class="btt_mON btt_mLevel">Level & Difficulty</a></li>
+    </ul>
+  
+    <h6 id="show_level_menu"></h6>
+    <a href="#" id="btt_start" class="btt">start</a>
+    
+    <a href="#" id="btt_soundMAIN" class="btt_sound icon-volume-on"></a>
+  </div>
+
+    <!-- menu_controls -->
+  <div id="menu_controls" class="full-page_flex d_none">
+    <a href="#" id="btt_mControlsOFF" class="btt_mControls">&times;</a> 
+    <ul>
+      <h6>CONTROLS</h6>
+      <li>
+        <span class="icon-up"> / W</span>
+        <span>- Up</span></li>
+      <li>
+        <span class="icon-down"> / S</span>
+        <span>- Down</span></li>
+      <li>
+        <span class="icon-left"> / A</span>
+        <span>- Left</span></li>
+      <li>
+        <span class="icon-right"> / D</span>
+        <span>- Right</span></li>
+      <li>
+        <span>space / L</span>
+        <span>- Shoot</span></li>
+      <li>
+        <span>escape</span>
+        <span>- Pause</span></li>
+    </ul>
+    <ul>
+      <h6>ITEMS</h6>
+      <li>
+        <span class="itemS item_heart">&hearts;</span>
+        <span>- Life-Up</span></li>
+      <li>
+        <span class="itemS item_star">&starf;</span>
+        <span>- Rapid Fire</span></li>
+      <li>
+        <span class="itemS item_triple">x3</span>
+        <span>- Triple Fire</span></li>
+    </ul>
+  </div>
+
+    <!-- menu_enemies -->
+  <div id="menu_enemies" class="full-page_flex d_none">
+    <a href="#" id="btt_mEnemiesOFF" class="btt_mEnemies">&times;</a> 
+    <h6>ENEMYS</h6>
+    <ul class="enemy_score">
+      <li>
+        <span>ENEMY -</span>
+        <span>SCORE</span></li>
+      <li>
+        <span>SMALL -</span>
+        <span>
+          <span>+10</span> /<span> -10</span>
+        </span></li>
+      <li>
+        <span>MEDIUM -</span>
+        <span>
+          <span>+50</span> /<span> -100</span>
+        </span></li>
+    </ul>
+    <ul>
+      <li>
+        <span class="imgS">
+          <img src="img/mosca.png" alt="">
+        </span>
+        <span class="nombreS">- &nbsp;&nbsp; Musca Domestica</span></li>
+      <li>
+        <span class="imgS">
+          <img src="img/dragon.png" alt="">
+        </span>
+        <span class="nombreS">- &nbsp;&nbsp; <a href="http://clipartmag.com/fire-breathing-dragon-images-clipart">Draconis Pumilus</a></span></li>
+      <li>
+        <span class="imgS">
+          <img src="img/cupid.png" alt="">
+        </span>
+        <span class="nombreS">- &nbsp;&nbsp; Cupid me</span></li>
+      <li>
+        <span class="imgS">
+          <img src="img/face1.png" alt="">
+        </span>
+        <span class="nombreS">- &nbsp;&nbsp; Faciem Stultividus</span></li>
+      <li>
+        <span class="imgS">
+          <img src="img/G1.png" alt="">
+        </span>
+        <span class="nombreS">- &nbsp;&nbsp; Ginettarys Tremends</span></li>    
+    </ul>
+  </div>
+
+    <!-- menu_level -->
+  <div id="menu_level" class="full-page_flex d_none">
+    <ul>
+      <li>
+        <a href="#" class="btt_level">LEVEL 1 - Cementerio de Moscas</a></li>
+      <li>
+        <a href="#" class="btt_level">LEVEL 2 - Arenas del Tiempo</a></li>
+      <li>
+        <a href="#" class="btt_level">LEVEL 3 - South Park, Colorado</a></li>
+      <li>
+        <a href="#" class="btt_level">LEVEL 4 - Orbitas Blancas</a></li>
+      <li>
+        <a href="#" class="btt_level">LEVEL 5 - Agujero Rojo</a></li>
+    </ul>
+    <div class="C-difficulty">
+      <a href="#" class="btt_mDif dif_selected">EASY</a>
+      <a href="#" class="btt_mDif">HARD</a>
+    </div>
+    <a href="#" id="btt_mLevelOFF" class="btt btt_mLevel">OK</a>  
+  </div>
+
+  <!-- ROTATE SIGN -->
+    <!-- <div id="rotate_sign" class="full-page_flex d_none">
+      <img src="img/rotate_mobile.png" alt="">
+    </div> -->
+
+  <!-- NO MOBILE SIGN -->
+    <div id="notouch_sign" class="full-page_flex d_none">
+      <p data-TXT="T_1" class="TXT">The touch screen version of this game is not available yet.</p>
+      <p data-TXT="T_2" class="TXT">In order to play, please use a device with a keyboard.</p>
+    </div>
+
+<!-- CONTAINER -->
+  <div id="container" class="cont-scroll"> 
+  <!-- <div id="container" class="">  -->
+
+  <!-- MENU-PAUSE -->
+    <div id="menu_pause" class="full-page_flex d_none">
+      <a href="#" id="btt_soundMENU" class="btt btt_sound icon-volume-on"></a>
+      <a href="#" id="btt_resume" class="btt">resume</a>
+      <a href="#" id="btt_restartMENU" class="btt btt_restart">restart</a> 
+      <a href="#" id="btt_backMENU" class="btt btt_back">back to main menu</a> 
+    </div>
+
+  <!-- GAME OVER -->
+    <div id="gameover" class="full-page_flex d_none">
+      <p>GAME OVER</p>
+      <a href="#" id="#btt_restartGO" class="btt btt_restart">restart</a>
+      <a href="#" id="btt_backGO" class="btt btt_back">back to main menu</a> 
+    </div>
+
+  <!-- ENDING -->
+    <div id="ending_sign" class="full-page_flex d_none">
+      <p></p>
+      <a href="#" id="btt_backEND" class="btt btt_back">back to main menu</a> 
+    </div>
+
+
+  <!-- LEVEL SIGN -->
+    <div id="level_sign" class="full-page_flex d_none">
+      <p></p>
+    </div>
+
+
+  
+
+  <!-- TOP-BAR -->
+    <div id="top_Bar">
+
+      <div class="leftSide_bar">
+        <div class="score_Bar">
+          <div id="scorer_bar"></div>
+        </div>
+        <p id="scorer_num"></p>
+      </div>
+
+      <div class="rightSide_bar">
+        <div id="life_count"></div>
+        <a href="#" id="btt_menu">MENU</a> 
+      </div>
+      
+    </div>
+
+    
+  <!-- BACKGROUND -->
+    <div id="backGround">
+      <!--OVNI-->
+      <div id="ovni" class="Ovni">
+        <div class="P1-ovni"></div>
+        <div id="base_ovni"class="Base-ovni"></div>
+        <div class="Linea-ovni"></div>
+        <div class="Rayo-ovni"></div>
+        <div class="Laser-gun"></div>
+      <!--GATO-->
+        <div class="Gato">
+        <!--orejas-->   
+          <div class="cont-orejas">
+            <div class="oreja oreja1">
+              <div class="or-D"></div>
+              <div class="raya or-V"></div>
+            </div>
+            <div class="oreja oreja2">
+              <div class="or-D"></div>
+              <div class="raya or-V"></div>
+            </div> 
+          </div>  
+        <!--cabeza (ojos)-->  
+          <div class="cabeza">
+          <!--ojos--> 
+            <div class="cont-ojos">
+              <div class="ojo o1">
+                <div class="pupila"></div></div>
+              <div class="ojo o2">
+                <div class="pupila"></div></div>
+            </div>
+          </div>
+          <div class="cabeza-fondo"></div>
+        <!--bigotes--> 
+          <div class="cont-bigotes ">
+            <div class="bigote big1"></div>
+            <div class="bigote big2"></div>
+            <div class="bigote big3"></div>
+            <div class="bigote big4"></div>
+            <div class="bigote big5"></div>
+            <div class="bigote big6"></div>
+          </div>
+        <!--cuerpo-->
+          <div class="cuerpo"></div>  
+          <div class="cuerpo-fondo"></div>
+          <div class="raya pata"></div>
+        <!--cola-->
+          <div class="raya cola1"></div>  
+          <div class="raya cola2"></div>
+        <!--cuerpo movible-->  
+          <div class="raya c8"></div>
+          <div class="raya c9"></div>
+          <div class="raya c10"></div>
+
+        <!-- Complementos -->
+          <div id="hat"></div>
+          <div id="pajarita" class="d_none"></div>
+
+        </div>
+      <!--sombra-gato-->
+        <div class="Sombra Sombra-gato"></div>  
+        
+      </div>
+      <!-- mojito -->
+      <div class="mojito d_none"></div>
+  
+    
+  <!-- CONTROL BUTTONS -->
+      <!-- <div class="C-BttC_Arrows">
+        <div id="btt_Left" class="BttC BttC_Arrow icon-left"></div>
+        <div id="btt_Up" class="BttC BttC_Arrow icon-up"></div>
+        <div id="btt_Down" class="BttC BttC_Arrow icon-down"></div>
+        <div id="btt_Right" class="BttC BttC_Arrow icon-right"></div>
+      </div>
+      <div id="btt_Shoot" class="BttC BttC_Shoot icon-target"></div> -->
+    </div>
+  </div>
+</body>
+
+<script src="ovni.js"></script>
+<script src="touchEvents.js"></script>
+</html>

@@ -1,0 +1,163 @@
+
+
+@import '_main';
+@import url("z-Normaliz.css");
+@import url("x-Tipografia.css");
+
+
+
+
+/* --- MAIN --- */
+/* -- Sections -- */
+.Section:nth-of-type(2) {
+  background: color(brown1)
+}  
+.Section:nth-of-type(4) {
+  background: color(gray1)
+}  
+
+
+.Section {
+  width: 100%;
+  text-align: center;
+  
+  /* -- Sec SIN Img -- */
+  .Box-Text {
+    width: 300px;
+    padding: 60px 20px 50px;
+    margin: auto;
+    
+    @include m400 {
+      width: 340px;
+    }
+    @include m480 {
+      width: 420px;
+      padding: 80px 20px 70px;
+    }
+    @include m768 {
+      width: 540px;
+    }
+    h2 {
+      color: color(orange1);
+    }
+    p {
+      margin: 10px 0 20px;
+      color: color(black1);
+    }
+    span, a {
+      display: inline-block;
+      margin: 15px;  
+      color: color(orange1);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+
+  /* -- Sec CON Img -- */
+  .SecImg {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: row-reverse wrap;
+  
+    .Box-Text_Img {
+      width: 100%;
+
+      @include m768 {
+        width: 50%;
+      }
+
+      .Box-TextHalf {
+        width: 300px;
+        padding: 60px 20px 10px;
+        margin: auto;
+
+        @include m400 {
+          width: 340px;
+        }
+        @include m480 {
+          width: 420px;
+          padding: 80px 20px 20px;
+        }
+        @include m768 {
+          width: 370px;
+          padding: 80px 20px 70px;
+        }
+        @include m1024 {
+          width: 500px;
+        }
+        h2 {
+          color: color(orange2);
+        }
+        p {
+          margin: 10px 0 20px;
+          color: color(white1);
+        }
+        span, a {
+          display: inline-block;
+          margin: 15px;  
+          color: color(orange2);
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    
+    .Box-Foto {
+      width: 100%;
+      padding: 20px;
+      
+      @include m768 {
+        width: 50%;
+        padding: 30px 20px;
+      }
+
+      img {
+        width: 100%;
+        max-width: 580px;
+        margin: auto;
+
+        @include m768 {
+          display: none;
+        }
+      }
+
+      .img {
+        width: 100%;
+        height: 100%;
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+
+        @include m768 {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.Section:nth-of-type(4) .SecImg {
+  display: flex;
+  flex-flow: row wrap;
+  .Box-Text_Img {
+    .Box-TextHalf {
+      h2 {
+        color: color(orange1);
+      }
+      p {
+        margin: 10px 0 20px;
+        color: color(black1);
+      }
+      span, a {
+        display: inline-block;
+        margin: 15px;  
+        color: color(orange1);
+      }
+    }
+  }    
+}

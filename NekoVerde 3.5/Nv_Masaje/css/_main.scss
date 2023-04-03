@@ -1,0 +1,309 @@
+
+
+/* colores */
+$colors: (
+  white1: #f0f0f0,
+  white2: #fffbf6,
+  white2tr: #fffbf650,
+  black1: #333333,
+  black2: #444444,
+  black3: #5d5d5d,
+  orange1: #af8957,
+  orange2: #e7d7c1,
+  orange3: #a37f50,
+
+  brown1: #7e643f,
+  brown1tr: #7e643fde,
+  brown2tr: #997c53de,
+  brown3: #927853,
+  gray1: #e6d9c8
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+/* @media */
+$m400: 400px;
+$m480: 480px;
+$m600: 600px;
+$m768: 768px;
+$m900: 900px;
+$m1024: 1024px;
+$m1124: 1124px;
+$m1300: 1300px;
+
+@mixin m400 {
+  @media (min-width: #{$m400}){
+    @content;}
+}
+@mixin m480 {
+  @media (min-width: #{$m480}){
+    @content;}
+}
+@mixin m600 {
+  @media (min-width: #{$m600}){
+    @content;}
+}
+@mixin m768 {
+  @media (min-width: #{$m768}){
+    @content;}
+}
+@mixin m900 {
+  @media (min-width: #{$m900}){
+    @content;}
+}
+@mixin m1024 {
+  @media (min-width: #{$m1024}){
+    @content;}
+}
+@mixin m1124 {
+  @media (min-width: #{$m1124}){
+    @content;}
+}
+@mixin m1300 {
+  @media (min-width: #{$m1300}){
+    @content;}
+}
+
+
+
+
+
+
+/* ---- General ---- */
+body {
+  width: 100%;
+  height: 100%;
+  background-color: color(white2);
+  overflow-x: hidden;
+}
+
+/*-- Boton N{v} --*/
+.BotNv {
+  position: fixed;
+  z-index: 200;
+  background: color(white2tr);
+  top: 60px;
+  left: 0;
+  opacity: .8;
+  
+  @include m768 {
+    top: 80px;
+  }
+
+  h3 {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 6px 8px;
+    color: color(black2);
+
+    @include m768 {
+      font-size: 28px;
+      line-height: 28px;
+    } 
+
+    span {
+      color: #407c44;
+    }
+  }
+}
+
+
+
+/* --- NAV --- */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: color(brown1);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 200;
+  
+  @include m768 {
+    height: 60px;
+  }
+
+  /* logo */
+  .logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: color(white2);
+    
+    @include m768 {
+      padding-left: 20px;
+    }
+
+    img {
+      max-height: 35px;
+      filter: invert(99%);
+      margin-right: 10px;
+      
+      @include m768 {
+        margin-right: 15px;
+      }
+    }
+  }
+    
+  /* b-Menu */
+  .b-Menu {
+    font-size: 50px;
+    line-height: 1;
+    font-family: 'Lora', serif;
+    padding-right: 30px;
+    text-decoration: none;
+    color: color(white2);
+
+    @include m900 {
+      display: none;
+    }
+  }
+  
+  /* Menu */
+  .C-ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    display: none;
+    
+    @include m768 {
+      top: 60px;
+    }
+    @include m900 {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: unset;
+      display: block;
+    }
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+
+      @include m900 {
+        padding-right: 20px;
+        flex-flow: row wrap;
+      }
+    }
+
+    li a {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding: 15px;
+      background: color(brown2tr);
+      color: color(white2);
+
+      @include m900 {
+        background: transparent;
+      }
+    }
+    li a:hover {
+      background: color(brown1tr);
+
+      @include m900 {
+        background: transparent;
+      }
+    }
+  }
+}
+
+/*nav on scroll*/
+.navTransp{
+  background: color(brown1tr);
+}
+
+
+/* .header - main image */
+.header {
+  width: 100%;
+  height: 320px;
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+
+  @include m480 {
+    height: 320px;
+  }
+  @include m600 {
+    height: 400px;
+    min-height: 66vh;
+  }
+  @include m768 {
+    height: calc(100vh - 60px);
+    min-height: unset;
+    margin-top: 60px;
+  }
+}
+
+
+
+/* --- FOOTER --- */
+footer {
+  width: 100%;
+  background: color(brown1);
+  color: color(white2);
+  padding: 20px 40px 30px;
+  display: flex;
+  flex-flow: column wrap;
+
+  @include m600 {
+    padding: 35px 40px 30px;
+    flex-flow: row-reverse wrap;
+    justify-content: space-between;
+  }
+  
+  /*img*/
+  div:first-child {
+    margin: 0 auto 20px;
+
+    @include m600{
+      margin: 10px 0 0;
+    }
+
+    img {
+      height: 60px;
+      filter: invert(99%);
+      margin-right: 10px;
+
+      @include m600 {
+        height: 100px;
+        margin-right: 0px;
+      }
+    }
+    p {
+      margin-top: -8px;
+
+      @include m600 {
+        margin-top: -15px;
+      }
+    }
+  }
+  
+  /*text*/
+  h5 {
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  span {
+    margin-right: 10px;
+  }
+}
+
+
+

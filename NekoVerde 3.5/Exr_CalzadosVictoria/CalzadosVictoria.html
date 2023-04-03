@@ -1,0 +1,87 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calzados Victoria</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CalzadosVictoria.css">
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+</head>
+<body>
+  <header>
+    <nav id="nav" >
+      <div class="logo">
+        <img src="img/logo.jpg">
+      </div>
+      <div id="icon-menu">&equiv;</div>
+      <!-- <div id="icon-close">&times;</div> -->
+      <ul class="MenuTop">
+        <li><a href="#">INICIAR SESIÓN</a></li>
+        <li><a href="#">BUSCAR</a></li>
+        <li><a href="#">FAVORITOS</a></li>
+        <li><a href="#">MI CESTA</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="Cont">
+    <aside class="ContLeft" id="ContLeft">
+      <div class="Search">
+        <input type="text" class="searchText" placeholder="BUSCAR">
+        <svg class="lupa" width="32" height="32">
+          <line x1="7" y1="22" x2="13" y2="16"/>
+          <circle cx="17" cy="12" r="4"/>
+        </svg>
+      </div>
+      <ul class="MenuLeft">
+        <li><a href="#">CHICA</a></li>
+        <li><a href="#">CHICO</a></li>
+        <li><a href="#">NIÑOS</a></li>
+        <li><a href="#">BASICS</a></li>
+        <li><a href="#">ACCESORIOS</a></li>
+        <li><a href="#">BAMBA BY VICTORIA</a></li>
+        <li><a href="#">#COMMUNITY</a></li>
+      </ul>
+    </aside>
+    <section id="Main" class="Main">
+      <img src="img/home_banner1_coleccion_escritorio.gif" alt="">
+      <img src="img/home_banner1_chica_escritorio.jpg" alt="">
+      <img src="img/home_banner3_chico_escritorio.jpg" alt="">
+    </section>
+  </div>
+
+  <script type="text/javascript">
+    var IconMenu = document.getElementById("icon-menu");
+    var Nav = document.getElementById("nav");
+    var Main = document.getElementById("Main");
+    var ContL = document.getElementById("ContLeft");
+
+   /* icon.menu onClick */
+    var j = 1;
+    IconMenu.onclick = function(){
+      ContL.classList.toggle("ContL-active");
+      Main.classList.toggle("Main-active");
+      Nav.classList.toggle("nav-active");
+      j++;
+      if(j%2 == 0){
+        IconMenu.innerHTML = "&times;";
+      }else{
+        IconMenu.innerHTML = "&equiv;";
+      }
+    }
+
+    /* reset onResize */
+    window.onresize = function(){
+      if(window.innerWidth >= 959){
+        ContL.classList.remove("ContL-active");
+        Main.classList.remove("Main-active");
+        Nav.classList.remove("nav-active");
+        IconMenu.innerHTML = "&equiv;";
+        j = 1;
+      }
+    }
+    
+    window.onresize
+
+  </script>	
+</body>
+
+</html>

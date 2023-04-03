@@ -1,0 +1,76 @@
+    /*--- pagina 6 - CONTACT ---*/
+    
+/*--- CONTACT(6) - HEADER 
+.CF-Resp---*/
+.CF-Resp>.Cn-F1{
+  background-image: url('img/contact-pic1_1920x1079.jpg');
+}
+/*--- CONTACT(6) - SECTION 1 ---*/
+.CnS1-Wrap{
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+.CnS1-Wrap>.Caja-texto{
+  width: 33.333%;
+}
+.CnS1-Wrap>.Wrap-form{
+  width: 66.666%;
+  padding: 0 5%;
+}
+input, textarea{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 0 1% 18px;
+  outline: none;
+  color: #645c4f;
+  background-color: rgb(252, 248, 239);
+  resize: none;
+  border:none;
+}
+#submit{
+  cursor: pointer;
+  background: #122416;
+  color: #d3c7b2;
+  border-radius: 3px;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 1px;
+  padding: 11px 20px;
+  margin: 8px 0 40px;
+  transition: all .3s;
+}
+#submit:hover{
+  background: #103317;
+  color: #ffffff;
+}
+/*--- @media - CONTACT(6) - SECTION 1 ---*/
+@media screen and (max-width: 767px){
+
+  .CnS1-Wrap{
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .CnS1-Wrap>.Caja-texto{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  .CnS1-Wrap>.Caja-texto>br{
+    display: none;
+  }
+  .CnS1-Wrap>.Wrap-form{
+    width: 100%;
+  }
+  #email, #subject{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px){
+  .CnS1-Wrap{
+    padding-top: 50px;
+  }
+}    

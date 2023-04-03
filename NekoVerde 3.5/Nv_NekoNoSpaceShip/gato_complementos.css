@@ -1,0 +1,125 @@
+
+/* - vaquero - */
+.hat-L1{
+  position: absolute;
+  bottom: -49px;
+  left: -39px;
+  background-image: url(img/hat1.png);
+  background-size: cover;
+  width: 165px;
+  height: 80px;
+  z-index: 33;
+}
+/* - turbante - */
+.hat-L2{
+  position: absolute;
+  bottom: -66px;
+  left: -23px;
+  bottom: -49px;
+  left: -39px;
+  background-image: url(img/hat2.png);
+  background-size: cover;
+  width: 155px;
+  height: 75px;
+  z-index: 33;
+}
+/* -  Stan`s hat -  */
+.hat-L3{
+  position: absolute;
+  bottom: -39px;
+  left: 5px;
+  transform: rotate(13deg);
+  background-image: url(img/hat3.png);
+  background-size: cover;
+  width: 102px;
+  height: 58px;
+  z-index: 32;
+}  
+/* - piloto - */
+.hat-L4{
+  position: absolute;
+  bottom: -45px;
+  left: -6px;
+  background-image: url(img/hat4.png);
+  background-size: cover;
+  width: 110px;
+  height: 75px;
+  z-index: 33;
+}
+/* - sombrero  - */
+.hat-L5{
+  position: absolute;
+  bottom: -45px;
+  left: -6px;
+  background-image: url(img/hat5.png);
+  background-size: cover;
+  width: 110px;
+  height: 95px;
+  z-index: 33;
+}
+
+/* - pajarita 10 - */
+#pajarita{
+  position: absolute;
+  top: 86px;
+  left: 28px;
+  background-image: url(img/pajarita.png);
+  background-size: cover;
+  width: 57px;
+  height: 30px;
+  z-index: -2;
+} 
+
+
+
+
+/* ------- ENDING ------*/
+/* - sombrero-paja - */
+.hat-ending{
+  position: absolute;
+  bottom: -49px;
+  left: -39px;
+  background-image: url(img/hat-ending.png);
+  background-size: cover;
+  width: 170px;
+  height: 83px;
+  z-index: 33;
+}
+
+
+/* - mojito - */
+.mojito{
+  position: absolute;
+  top: calc(20% + 218px);
+  left: calc(40% - 61px);
+  background-image: url(img/mojito.png);
+  background-size: cover;
+  width: 115px;
+  height: 157px;
+  width: 80px;
+  height: 110px;
+  z-index: 80;
+} 
+
+@media (max-height: 430px){
+  .mojito{
+    top: calc(20% + 144px);
+    left: calc(40% - 58px);
+    transform: scale(.9);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

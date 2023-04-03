@@ -1,0 +1,1094 @@
+
+
+/*----- ANIMACIONES COLA -----*/
+
+@keyframes Cola-8{ 
+  0%, 9%{width: 20px; top: 230px; left: 76px; transform: rotate(0deg);}
+  10%, 19%{width: 22px; top: 229px; left: 76px; transform: rotate(5deg);}
+  20%, 38%{width: 22px; top: 231px; left: 76px; transform: rotate(-5deg);}
+/*latigo1*/
+  40%{width: 20px; top: 230px; left: 76px; transform: rotate(0deg);}
+  41.5%{width: 22px; top: 228px; left: 76px; transform: rotate(10deg);}
+  42.5%{width: 20px; top: 228px; left: 78px; transform: rotate(15deg);}
+  44%{width: 20px; top: 226px; left: 78px; transform: rotate(30deg);}
+  44.5%{width: 22px; top: 230px; left: 76px; transform: rotate(0deg);}
+  45%, 70%{width: 20px; top: 230px; left: 76px; transform: rotate(0deg);}
+/*latigo2*/
+  72%{width: 22px; top: 228px; left: 76px; transform: rotate(10deg);}
+  73%{width: 20px; top: 228px; left: 78px; transform: rotate(15deg);}
+  74%{width: 20px; top: 226px; left: 78px; transform: rotate(30deg);}
+  74.5%{width: 22px; top: 230px; left: 76px; transform: rotate(0deg);}
+  75%, 100%{width: 20px; top: 230px; left: 76px; transform: rotate(0deg);}
+}  
+@keyframes Cola-9{
+  0%, 9%{width: 20px; top: 230px; left: 56px; transform: rotate(0deg);}
+  10%, 19%{width: 20px; top: 226px; left: 58px; transform: rotate(12deg);}
+  20%, 38%{width: 20px; top: 234px; left: 58px; transform: rotate(-12deg);}
+/*latigo1*/  
+  40%{width: 20px; top: 230px; left: 56px; transform: rotate(0deg);}
+  41.5%{width: 22px; top: 222px; left: 56px; transform: rotate(25deg);}
+  42.5%{width: 22px; top: 220px; left: 58px; transform: rotate(30deg);}
+  44%{width: 22px; top: 212px; left: 66px; transform: rotate(70deg);}
+  44.5%{width: 20px; top: 232px; left: 58px; transform: rotate(-13deg);}
+  45%, 70%{width: 20px; top: 230px; left: 56px; transform: rotate(0deg);}
+/*latigo2*/
+  72%{width: 22px; top: 222px; left: 56px; transform: rotate(25deg);}
+  73%{width: 22px; top: 220px; left: 58px; transform: rotate(30deg);}
+  74%{width: 22px; top: 212px; left: 66px; transform: rotate(70deg);}
+  74.5%{width: 20px; top: 232px; left: 58px; transform: rotate(-13deg);}
+  75%, 100%{width: 20px; top: 230px; left: 56px; transform: rotate(0deg);}
+}
+@keyframes Cola-10{
+  0%, 9%{width: 6px; top: 230px; left: 50px; transform: rotate(0deg);}
+  10%, 19%{width: 8px; top: 222px; left: 52px; transform: rotate(45deg);}
+  20%, 38%{width: 8px; top: 238px; left: 52px; transform: rotate(-45deg);}
+/*latigo1*/
+  40%{width: 6px; top: 230px; left: 50px; transform: rotate(0deg);}
+  41.5%{width: 8px; top: 218px; left: 52px; transform: rotate(0deg);}
+  42.5%{width: 8px; top: 214px; left: 54px; transform: rotate(25deg);}
+  44%{width: 8px; top: 200px; left: 70px; transform: rotate(100deg)}
+  44.5%{width: 6px; top: 236px; left: 54px; transform: rotate(-35deg);}
+  45%, 70%{width: 6px; top: 230px; left: 50px; transform: rotate(0deg);}
+/*latigo2*/
+  72%{width: 8px; top: 218px; left: 52px; transform: rotate(0deg);}
+  73%{width: 8px; top: 214px; left: 54px; transform: rotate(25deg);}
+  74%{width: 8px; top: 200px; left: 70px; transform: rotate(100deg)}
+  74.5%{width: 6px; top: 236px; left: 54px; transform: rotate(-35deg);}
+  75%, 100%{width: 6px; top: 230px; left: 50px; transform: rotate(0deg);}
+}
+
+
+
+/*----- ¡¡¡¡ANIMACIONES!!!! -----*/
+
+
+    /*-----  LOOK-AROUND (60s) -----*/
+@keyframes LookAround_Ojos-60s{
+/*blink-basic(s.0-s.15)*/
+  0%{height: 0px;}
+  0.25%, 4.75%{height: 20px;}
+  5%{height: 0px;}        
+  5.5%, 12.5%{height: 20px;}
+  13%{height: 0px;}
+  13.5%, 19.5%{height: 20px;}
+  20%{height: 0px;}
+  20.5%, 24.5%{height: 20px;}
+/*blink-basic(s.15-s.30)*/
+  25%{height: 0px;}
+  25.5%, 32.5%{height: 20px;}
+  33%{height: 0px;}
+  33.5%, 37.5%{height: 20px;}
+  38%, 43.5%{height: 0px;}/*close*/
+  44.25%, 49.5%{height: 20px;}
+/*blink-basic(s.30-s.45)*/  
+  50%{height: 0px;}
+  50.5%, 54.5%{height: 20px;}
+  55%{height: 0px;}
+  55.5%, 60.25%{height: 20px;}
+  61%, 69%{height: 0px;}/*close*/
+  69.75%, 74.5%{height: 20px;}
+  75%{height: 0px;}
+/*blink-basic(s.45-s.60)*/
+  75.5%, 82.75%{height: 20px;}
+  83%{height: 0px;}
+  83.25%, 87.25%{height: 20px;}
+  88%, 93.5%{height: 0px;}
+  94.25%, 99.5%{height: 20px;}
+  100%{height: 0px;}
+}
+
+@keyframes LookAround_Pupilas-60s{
+/*look-around(s.0-s.15)*/     
+  0%, 6.25%{width: 4px; left: 10px; top: calc(-10px + 50%);}
+  6.75%, 12.5%{left: 7px;}
+  13%, 18.75%{left: 14px;}
+  19.25%, 24.75% {left: 8px;} 
+/*look-around(s.15-s.30)*/
+  25%, 29.25%{left: 12px;}
+  29.75%, 35.5%{left: 8px;}
+  36%, 43.75%{left: 4px;}
+  44.25%, 49.25%{left: 10px;}
+/*look-around(s.30-s.45)*/
+  50%, 51.75%{left: 7px;}
+  52.25%, 55.25%{left: 5px;}
+  55.75%, 62.5%{left: 11px;}
+  63%, 68.75%{left: 8px;}
+  69.25%, 74.25%{left: 15px;}
+/*look-around(s.45-s.60)*/    
+  75%, 79.25%{left: 12px;}
+  79.75%, 84.5%{left: 8px;}
+  85%, 93.75%{left: 7px;}
+  94.25%, 99.25%{left: 10px;}
+  100%{width: 4px; left: 8px; top: calc(-10px + 50%);}
+}
+
+
+
+    /*--- ANIMACION MOSCA (15s) ---*/
+
+/*----- OJOS (15s) + after (5s) -----*/
+@keyframes Mosca_Ojos-15s{
+  0%{height: 0px;}
+  1%, 19%{height: 24px;}
+  20%{height: 0px;}
+  21%, 49%{height: 24px;}
+  50%{height: 0px;}
+  51%, 79%{height: 24px;}
+  80%{height: 0px;}
+  81%, 99%{height: 24px;}
+  100%{height: 0px;}
+}
+@keyframes Mosca_Pupilas-15s{
+  0% {width: 4px; left: 8px; top: calc(-10px + 50%);} 
+  3%{width: 4px; left: 16px; top: calc(-10px + 50%);}
+  3.01%, 4%{width: 22px; left: 6px; top: calc(-9px + 50%);}
+  10%, 17%{left: 6px; top: calc(-8px + 50%);}
+  18%, 22%{left: 5px;}/*1*/
+  23%, 25%{left: 6px;}
+  26%, 35%{left: 5px;}
+  36%, 43%{left: 4px;}/*2*/
+  45%{left: 5px;}
+  50%, 54%{left: 4px;}/*3*/
+  57%{left: 3px;}
+  70%{left: 0px;}/*4*/
+  72%{left: 1px;}
+  80%{left: -2px;}/*5*/
+  85%{left: -1px;}
+  90%{left: -3px;}
+  95%{left: -2px;}/*6*/
+  98%{left: -4px;}
+  100%{width: 22px; left: -5px; top: calc(-8px + 50%);}
+}
+@keyframes Mosca_Ojos-after-5s{
+  0%{height: 0px;}
+  3%, 21%{height: 24px;}
+  24%{height: 0px;}
+  27%, 57%{height: 20px;}
+  60%{height: 0px;}
+  63%, 97%{height: 20px;}
+  100%{height: 0px;}
+}
+@keyframes Mosca_Pupilas-after-5s{
+  0%, 21%{width: 22px; left: -5px; top: calc(-8px + 50%);}
+  27%, 63%{width: 4px; left: 5px; top: calc(-10px + 50%);}
+  69%, 100%{left: 11px;}
+}
+
+/*----  MOSCA (15s) ----*/
+@keyframes Mosca_EjeX-15s{
+  0%{right: 0%; opacity: 0;}
+  1%{opacity: 1;}
+  20%{right: 32%;}/*1*/
+  25%{right: 25.25%;}
+  40%{right: 49.5%;}/*2*/
+  45%{right: 44.5%;}
+  50%{right: 52.5%;}/*3*/
+  53%{right: 48.75%;}
+  70%{right: 73%;}/*4*/
+  72%{right: 68.25%;}
+  80%{right: 80.75%;}/*5*/
+  85%{right: 75.5%;}
+  90%{right: 93.75%;}
+  95%{right: 87.5%;}/*6*/
+  99.8%{opacity: 1;}
+  100%{right: 102%; opacity: 0;}
+}
+@keyframes Mosca_Rotacion-15s{
+  0%, 19.9%{transform: rotate(0deg);}
+  20%, 24.9%{transform: rotate(180deg);}
+  25%, 39.9%{transform: rotate(0deg);}
+  40%, 44.9%{transform: rotate(180deg);}
+  45%, 49.9%{transform: rotate(0deg);}
+  50%, 52.9%{transform: rotate(180deg);}
+  53%, 69.9%{transform: rotate(0deg);}
+  70%, 71.9%{transform: rotate(180deg);}
+  72%, 79.9%{transform: rotate(0deg);}
+  80%, 84.9%{transform: rotate(180deg);}
+  85%, 89.9%{transform: rotate(0deg);}
+  90%, 94.9%{transform: rotate(180deg);}
+  95%{transform: rotate(0deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes Mosca_EjeY-15s{
+  0%{top: 10px;}
+  15%{top: 20px;}
+  30%{top: 40px;}
+  40%{top: 15px;}
+  45%{top: 20px;}
+  50%{top: 28px;}
+  56%{top: 48px;}
+  60%{top: 30px;}
+  70%{top: 50px;}
+  80%{top: 10px;}
+  100%{top: 20px;}
+}
+
+
+
+    /*--- ANIMACION SKATE (10s) ---*/
+
+/*--- OJOS (10s) ---*/
+@keyframes Skt_Ojos-10s{
+  0%{height: 0px;}
+  1%, 19%{height: 20px;}
+  20%{height: 0px;}
+  21%, 46%{height: 20px;}
+  47%{height: 0px;}
+  49%, 59%{height: 20px;}
+  60%{height: 0px;}
+  61%, 79%{height: 15px;}
+  80%{height: 0px;}
+  81%, 99%{height: 15px;}
+  100%{height: 0px;}
+}
+@keyframes Skt_Pupilas-10s{
+  0%, 10%{left: 10px;} 
+  15%{left: 15px; top: calc(-10px + 50%);}
+  32%{left: 14px; top: calc(-8px + 50%);}
+  43%{left: 13px;}
+  46%{left: 12px; top: calc(-8px + 50%);}
+  47%, 60%{left: 10px; top: calc(-10px + 50%);}
+  61%, 100%{left: 4px;}
+
+}
+
+/*--- GATO (10s) ---*/
+@keyframes Skt_Gato-10s{
+  0%, 40.6%{bottom: calc(50% + 70px); left: calc(50% - 80px);transform: rotate(0deg); z-index: 9;}
+  40.8%, 41%{bottom: calc(50% + 70px); transform: rotate(10deg);}
+  42.8%{bottom: calc(50% + 110px); transform: rotate(0deg); z-index: 9;}
+  /*cae*/
+  44%, 44.2%{bottom: calc(50% + 90px); left: calc(50% - 50px); transform: rotate(0deg); z-index: 11;}
+  /*salto2*/
+  44.4%, 44.6%{bottom: calc(50% + 90px); left: calc(50% - 50px); transform: rotate(10deg);}
+  48%{bottom: calc(50% + 160px); transform: rotate(0deg);}
+  /*cae2*/
+  54.5%{bottom: calc(50% + 90px); left: calc(50% - 190px); transform: rotate(0deg);}
+  100%{bottom: calc(50% + 90px); left: calc(50% - 700px); z-index: 11;}
+}
+  /* gato - foto avión */
+@keyframes Skt7_Gato-10s{
+  0%, 40.6%{bottom: calc(50% + 70px); left: calc(50% - 80px);transform: rotate(0deg); z-index: 9;}
+  40.8%, 41%{bottom: calc(50% + 70px); transform: rotate(10deg);}
+  42.8%{bottom: calc(50% + 110px); transform: rotate(0deg); z-index: 9;}
+  /*cae*/
+  44%, 44.2%{bottom: calc(50% + 90px); left: calc(50% - 50px); transform: rotate(0deg); z-index: 11;}
+  /*salto2*/
+  44.4%, 44.6%{bottom: calc(50% + 90px); left: calc(50% - 50px); transform: rotate(10deg);}
+  48%{bottom: calc(50% + 160px); transform: rotate(0deg);}
+  /*cae2*/
+  54.5%{bottom: calc(50% + 90px); left: calc(50% - 190px); transform: rotate(0deg) translateX(0);}
+
+  56%{bottom: calc(50% + 90px); transform: rotate(0deg) translateX(0);}
+  
+  /*se cae*/
+  63%{bottom: calc(50% + 70px); transform: rotate(-20deg) translateX(-90px);}
+
+  /* 68%{bottom: calc(50% + 70px);} */
+
+  75%{bottom: calc(50% - 60px); transform: rotate(-60deg) translateX(-320px);}
+
+  100%{bottom: calc(50% - 60px); transform: rotate(-60deg) translateX(-320px);
+  left: calc(50% - 700px); z-index: 11;}
+}
+
+/*--- SOMBRA-GATO (10s) ---*/
+@keyframes Skt_Smbr-gato-10s{
+  0%, 41%{width: 180px; height: 36px; left: calc(50% - 80px);}
+  42.8%{width: 140px; height: 30px; left: calc(50% - 40px);}
+  44%, 45%{width: 180px; height: 36px; left: calc(50% - 50px);}
+  /*salto2*/
+  48%{width: 120px; height: 27px; left: calc(50% - 80px);}
+  54%{width: 180px; height: 36px; left: calc(50% - 190px);}
+  100%{width: 180px; height: 36px; left: calc(50% - 700px);}
+}
+  /* sombra-gato - foto avión */
+@keyframes Skt7_Smbr-gato-10s{
+  0%, 41%{width: 180px; height: 36px; left: calc(50% - 80px); bottom: calc(50% - 168px);}
+  42.8%{width: 140px; height: 30px; left: calc(50% - 40px);}
+  44%, 45%{width: 180px; height: 36px; left: calc(50% - 50px);}
+  /*salto2*/
+  48%{width: 120px; height: 27px; left: calc(50% - 80px);}
+  54%{width: 180px; height: 36px; left: calc(50% - 190px); bottom: calc(50% - 168px); transform: translateX(0);}
+/*se cae*/
+  60%{width: 90px; bottom: calc(50% - 183px); transform: translateX(63px);}
+  64%{width: 0px; bottom: calc(50% - 193px); transform: translateX(108px);}
+  100%{width: 0px; height: 36px; left: calc(50% - 700px);}
+}
+
+/*--- SKATE (10s) ---*/
+@keyframes Skt_Skate-10s{
+  0%{bottom: calc(50% - 133px); transform: rotate(0deg); left: calc(50% + 505px); opacity: 1;}
+  /*pica*/
+  44%{bottom: calc(50% - 133px); transform: rotate(0deg);}
+  44.6%{bottom: calc(50% - 116px);}
+  /*gira*/
+  45.6%{bottom: calc(50% - 97px); transform: rotate(45deg); }
+  47.2%{bottom: calc(50% - 57px);}
+  48.8%, 51.2%{bottom: calc(50% - 36px);}
+  54%{bottom: calc(50% - 133px); transform: rotate(360deg);} 
+  100%{bottom: calc(50% - 133px); transform: rotate(360deg); left: calc(50% - 620px); opacity: 1;}
+}
+  /* skate - foto avión */  
+@keyframes Skt7_Skate-10s{
+  0%{bottom: calc(50% - 133px); transform: rotate(0deg); left: calc(50% + 505px); opacity: 1;}
+  /*pica*/
+  44%{bottom: calc(50% - 133px); transform: rotate(0deg);}
+  44.6%{bottom: calc(50% - 116px);}
+  /*gira*/
+  45.6%{bottom: calc(50% - 97px); transform: rotate(45deg); }
+  47.2%{bottom: calc(50% - 57px);}
+  48.8%, 51.2%{bottom: calc(50% - 36px);}
+  54%{bottom: calc(50% - 133px); transform: rotate(360deg);}
+  /*se cae*/
+  62%{bottom: calc(50% - 163px); transform: rotate(340deg);}
+
+  68%{bottom: calc(50% - 220px); transform: rotate(300deg);}
+
+  75%{bottom: calc(50% - 380px); transform: rotate(260deg);}
+
+  100%{bottom: calc(50% - 380px); transform: rotate(300deg); left: calc(50% - 620px); opacity: 1;}
+}
+
+/*--- SOMBRA-SKATE (10s) ---*/
+@keyframes Skt_Smbr-Skate-10s{
+  0%{left: calc(50% + 410px); opacity: 1;}
+  44%{width: 200px; height: 20px; bottom: calc(50% - 161px); transform: translateX(0);}
+  46%, 52%{width: 120px; height: 12px; bottom: calc(50% - 153px); transform: translateX(40px);}
+  54%{width: 200px; height: 20px; bottom: calc(50% - 161px); transform: translateX(0);}
+  100%{left: calc(50% - 715px); opacity: 1;}
+}
+  /* sombra-skate - foto avión */ 
+@keyframes Skt7_Smbr-Skate-10s{
+  0%{left: calc(50% + 410px); opacity: 1;}
+
+  44%{width: 200px; height: 20px; bottom: calc(50% - 161px); transform: translateX(0);}
+  46%, 52%{width: 120px; height: 12px; bottom: calc(50% - 153px); transform: translateX(40px);}
+  /*se cae*/
+  54%{width: 200px; height: 20px; bottom: calc(50% - 161px); transform: translateX(0);}
+  62%{width: 100px; bottom: calc(50% - 176px); transform: translateX(100px);}
+  67%{width: 0px; bottom: calc(50% - 186px); transform: translateX(150px);}
+  100%{left: calc(50% - 715px); width: 0px; opacity: 1;}
+}
+
+/*--- ITEMS-SKATE (10s) ---*/
+@keyframes Skt_Item-9M-10s{
+  0%, 45%{transform: rotate(0deg);
+  bottom: calc(50% - 165px);
+  left: calc(50% - 160px);
+  z-index: 10;}
+  50%, 100%{transform: rotate(-80deg);
+  bottom: calc(50% - 235px);
+  left: calc(50% - 280px);
+  z-index: 11;}
+}
+@keyframes Skt_Item-9B-10s{
+  0%, 45%{transform: rotate(0deg);
+  bottom: calc(50% - 105px);
+  left: calc(50% - 128px);
+  z-index: 10;}
+  47%{bottom: calc(50% - 85px);}
+  50%, 100%{transform: rotate(30deg);
+  bottom: calc(50% - 110px);
+  left: calc(50% - 480px);
+  z-index: 9;}
+}
+  /* item-skate - foto avión */ 
+@keyframes Skt7_Item-9M-10s{
+  0%, 45%{transform: rotate(0deg);
+  bottom: calc(50% - 165px);
+  left: calc(50% - 160px);
+  z-index: 10;}
+  50%{transform: rotate(-80deg);
+  bottom: calc(50% - 235px);
+  left: calc(50% - 290px);
+  z-index: 11;}
+
+  55%, 100%{transform: rotate(-140deg);
+  bottom: calc(50% - 335px);
+  left: calc(50% - 420px);
+  z-index: 11;}
+  /* 47%{
+    bottom: calc(50% - 165px);
+  }
+  50%, 100%{
+    transform: rotate(-80deg);
+    bottom: calc(50% - 235px);
+    left: calc(50% - 450px);
+    z-index: 11;} */
+}
+@keyframes Skt7_Item-9B-10s{
+  0%, 45%{transform: rotate(0deg);
+  bottom: calc(50% - 105px);
+  left: calc(50% - 128px);
+  z-index: 10;}
+  47%{bottom: calc(50% - 85px);}
+  50%, 100%{transform: rotate(30deg);
+  bottom: calc(50% - 140px);
+  left: calc(50% - 480px);
+  z-index: 9;}
+}
+
+
+    /*---- ANIMACION BURBUJA ----*/
+/*--- (burbujas en Gato_burbujas.css) ---*/ 
+/*----- OJOS (6s) + after (10s) -----*/
+@keyframes Burb_Ojos-6s{
+  0%{height: 0px;}
+  2%, 5%{height: 18px;}
+  6%, 24%{height: 24px;}
+  28%{height: 0px;}
+  30%, 58%{height: 24px;}
+  60%{height: 0px;}
+  62%, 88%{height: 24px;}
+  90%{height: 0px;}
+  92%, 100%{height: 24px;}
+}
+@keyframes Burb_Pupilas-6s{
+  0%, 5%{width: 4px; left: 10px; top: calc(-10px + 50%);}
+  6%, 24%{width: 20px; left: 4px; top: calc(-7px + 50%);}
+  27%, 63%{width: 20px; left: 3px; top: calc(-13px + 50%);}
+  69%, 75%{width: 20px; left: 7px; top: calc(-13px + 50%);}
+  76%, 100%{width: 20px; left: 4px; top: calc(-7px + 50%);}
+}
+@keyframes Burb_Ojos-after-10s{
+  0%, 3%{height: 24px;}
+  4%{height: 0px;}
+  5%, 9%{height: 24px;}
+  10%{height: 0px;}
+  11%, 19%{height: 24px;}
+  20%{height: 0px;}
+  22%, 35%{height: 24px;}
+  37%{height: 0px;}
+  39%, 59%{height: 24px;}
+  60%, 100%{height: 0px;}
+}
+@keyframes Burb_Pupilas-after-10s{
+  0%, 3%{width: 20px; left: 4px; top: calc(-7px + 50%);}
+  5%, 15%{width: 4px;left: 10px; top: calc(-10px + 50%);}
+  19%{left: 15px;}
+  22%, 37%{left: 14px; top: calc(-10px + 50%);}
+  39%, 60%{left: 10px; top: calc(-8px + 50%);}
+  61%, 100%{left: 4px;}
+}
+/*--- GATO (10s) ---*/
+@keyframes Burb_Gato-up-10s{
+  0%{transform: translateX(0px);}
+  3%{transform: translateX(0px) rotate(0deg);}
+  10%{transform: translateX(15px) rotate(5deg);}
+  7%{bottom: calc(50% + 70px);}
+  30%{transform: translateX(-25px) rotate(-5deg);}
+  50%{transform: translateX(25px) rotate(5deg);}
+  70%{transform: translateX(-25px) rotate(-6deg);}
+  90%{transform: translateX(25px) rotate(-5deg);}
+  99%{transform: translateX(0px) rotate(5deg);}
+  100%{bottom: calc(50% + 570px);}
+}
+/*--- SOMBRA (10s) ---*/
+@keyframes Burb_Smbr-gato-10s{
+  0%, 15%{width: 180px; height: 36px; left: calc(50% - 80px); opacity: .8;}
+  30%{ opacity: .8;}
+  95%, 100%{width: 0px; height: 00px; left: calc(50% + 10px); opacity: 0;}
+}
+/*--- BURB-GATO (10s) ---*/
+@keyframes Burb_b-wobble-10s{
+  0%{transform: translateX(0px);}
+  10%{transform: translateX(10px);}
+  30%{transform: translateX(-25px);}
+  50%{transform: translateX(25px);}
+  70%{transform: translateX(-25px);}
+  90%{transform: translateX(25px);}
+  100%{transform: translateX(0px);}
+}
+@keyframes Burb_b-up-10s{
+  0%{opacity: 0; width: 0px; height: 0px;}
+  4%{transform: translateY(0px);width: 320px; height: 320px;}
+  10%, 95%{opacity: 1;}
+  100%{opacity: 0; transform: translateY(-500px);}
+}
+
+
+
+    /*--- ANIMACION POZO (10s) ---*/
+/*--- OJOS (10s) ---*/
+@keyframes Pozo_Ojos-10s{
+  0%{height: 0px;}
+  1%, 19%{height: 20px;}
+  20%{height: 0px;}
+  21%, 46%{height: 20px;}
+  47%{height: 0px;}
+  49%, 52%{height: 20px;}
+  53%, 65%{height: 12px;}
+  66%, 100%{height: 0px;}
+}
+@keyframes Pozo_Pupilas-10s{
+  7%{left: 11x; top: calc(-10px + 50%);}  
+  10%, 30%{left: 9px; top: calc(-7px + 50%);}
+  30.3%, 40.9%{left: 11px; top: calc(-10px + 50%);}
+  41%, 53%{left: 9px; top: calc(-7px + 50%);} 
+  53.1%, 60%{left: 11px; top: calc(-10px + 50%);}
+  100%{left: 11px; top: calc(-10px + 50%);}
+}
+/*--- GATO (10s) ---*/
+@keyframes Pozo_Gato-10s{
+  0%, 65.6%{bottom: calc(50% + 70px); left: calc(50% - 80px); -webkit-clip-path: ellipse(340px 160px at 100px 82px); clip-path: ellipse(340px 160px at 100px 82px); transform: rotate(0deg);}
+  65.8%, 66%{bottom: calc(50% + 70px); left: calc(50% - 100px); transform: rotate(10deg);}
+  67.8%{bottom: calc(50% + 110px); left: calc(50% - 140px); transform: rotate(-5deg);
+  -webkit-clip-path: ellipse(340px 160px at 100px 82px); clip-path: ellipse(340px 160px at 100px 82px);}
+  69%{bottom: calc(50% + 30px); left: calc(50% - 180px); 
+   -webkit-clip-path: ellipse(340px 160px at 100px 82px); clip-path: ellipse(340px 160px at 100px 82px);}
+  75%, 100%{bottom: calc(50% - 250px); left: calc(50% - 227px);
+    -webkit-clip-path: ellipse(340px 160px at 180px -190px); clip-path: ellipse(340px 160px at 180px -190px);} 
+}
+@keyframes Pozo_Item-2-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 175px); 
+    left: calc(50% - 158px);
+    z-index: 10;}
+  69%, 100%{
+    transform: rotate(-83deg);
+    bottom: calc(50% - 210px);
+    left: calc(50% - 310px);
+    z-index: 9;}
+}
+@keyframes Pozo_Item-5-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 167px);
+    left: calc(50% - 160px);
+    z-index: 10;}
+  69%, 100%{
+    transform: rotate(-80deg);
+  bottom: calc(50% - 187px);
+  left: calc(50% - 330px);
+    z-index: 9;}
+}
+@keyframes Pozo_Item-9M-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 165px);
+    left: calc(50% - 160px);
+    z-index: 10;}
+  71%, 100%{
+    transform: rotate(-80deg);
+  bottom: calc(50% - 185px);
+  left: calc(50% - 330px);
+    z-index: 9;}
+}
+@keyframes Pozo_Item-9B-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 105px);
+    left: calc(50% - 128px);
+    z-index: 10;}
+
+  71%, 100%{transform: rotate(30deg);
+    bottom: calc(50% - 110px);
+    left: calc(50% - 480px);
+    z-index: 9;}
+}
+/* gato - foto avión*/
+@keyframes Salto_Gato-10s{
+  0%, 65.6%{bottom: calc(50% + 70px); left: calc(50% - 80px);transform: rotate(0deg); z-index: 10;}
+  65.8%, 66%{bottom: calc(50% + 70px); left: calc(50% - 120px); transform: rotate(10deg);}
+  67.8%{bottom: calc(50% + 110px); left: calc(50% - 240px); transform: rotate(-5deg);}
+  69%{bottom: calc(50% + 30px); left: calc(50% - 320px);}
+  75%{bottom: calc(50% - 290px); left: calc(50% - 400px); transform: rotate(0deg);}
+  100%{bottom: calc(50% - 290px); left: calc(50% - 480px); z-index: 10;}
+}
+@keyframes Salto_Item-2-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 175px); 
+    left: calc(50% - 158px);
+    z-index: 10;}
+  69%, 100%{
+    transform: rotate(-120deg);
+    bottom: calc(50% - 240px);
+    left: calc(50% - 540px);
+    z-index: 9;}
+}
+@keyframes Salto_Item-5-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 167px);
+    left: calc(50% - 160px);
+    z-index: 10;}
+  69%, 100%{
+    transform: rotate(-120deg);
+    bottom: calc(50% - 240px);
+    left: calc(50% - 540px);
+    z-index: 9;}
+}
+@keyframes Salto_Item-9M-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 165px);
+    left: calc(50% - 160px);
+    z-index: 10;}
+  68%{
+    bottom: calc(50% - 165px);
+  }
+  71%, 100%{
+    transform: rotate(-80deg);
+    bottom: calc(50% - 235px);
+    left: calc(50% - 450px);
+    z-index: 9;}
+}
+@keyframes Salto_Item-9B-10s{
+  0%, 66%{transform: rotate(0deg);
+    bottom: calc(50% - 105px);
+    left: calc(50% - 128px);
+    z-index: 10;}
+
+  71%, 100%{transform: rotate(30deg);
+    bottom: calc(50% - 110px);
+    left: calc(50% - 580px);
+    z-index: 9;}
+}
+/*--- SOMBRA (10s) ---*/
+@keyframes Pozo_Smbr-gato-10s{
+  0%, 65.6%{width: 180px; height: 36px; bottom: calc(50% - 168px); left: calc(50% - 80px);}
+  67.8%{width: 140px; height: 30px; left: calc(50% - 120px);}
+  69%{width: 180px; height: 36px; bottom: calc(50% - 198px); left: calc(50% - 160px);}
+  75%{width: 140px; height: 30px; bottom: calc(50% - 210px); left: calc(50% - 190px);}
+  76%, 100%{width: 0px; height: 0px; bottom: calc(50% - 200px); left: calc(50% - 190px);}
+}
+  /* sombra - foto avión*/
+@keyframes Salto_Smbr-gato-10s{
+  0%, 65.6%{width: 180px; height: 36px; bottom: calc(50% - 168px); left: calc(50% - 80px); opacity: .8;}
+  67.2%{opacity: .8;}
+  67.8%{width: 35px; height: 7px; left: calc(50% - 200px); opacity: 0;}
+  100%{opacity: 0;}
+}
+/*--- POZO (10s) ---*/
+@keyframes Agujero-10s{
+  0%, 4%{width: 0px; height: 0px; bottom: calc(50% - 195px); left: calc(50% - 120px); opacity: 1;}
+  14%, 85%{width: 270px; height: 40px; bottom: calc(50% - 215px); left: calc(50% - 255px);}
+  90%, 100%{width: 0px; height: 0px; bottom: calc(50% - 195px); left: calc(50% - 120px); opacity: 1;}
+}
+
+
+
+   /*--- ANIMACION GLOBO (15s) ---*/
+   
+/*--- CABEZA (15s) ---*/
+@keyframes Globo_Cabeza-15s{
+  0%{border-radius: 0; width: 82px; height: 68px; top: 24px; left: 8px;    
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, calc(100% - 4px) 72%,61% calc(100% - 4px), 61% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 72%, calc(100% - 4px) 72%,61% calc(100% - 4px), 61% 100%, 0 100%);} 
+
+  12%{border-radius: 47%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 88%, calc(100% - 20%) 88%, 66% calc(100% - 4%), 66% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 88%, calc(100% - 20%) 88%, 66% calc(100% - 4%), 66% 100%, 0 100%);
+  }
+  
+  30%{border-radius: 50%; width: 263px; height: 253px; top: -154px; left: -120px;  
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, calc(100% - 24%) 91%, 63% calc(100% - 3.5%), 63% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 91%, calc(100% - 24%) 91%, 63% calc(100% - 3.5%), 63% 100%, 0 100%);}
+
+  100%{border-radius: 50%; width: 263px; height: 253px; top: -154px; left: -120px;  
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 91%, calc(100% - 24%) 91%, 63% calc(100% - 3.5%), 63% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 91%, calc(100% - 24%) 91%, 63% calc(100% - 3.5%), 63% 100%, 0 100%);}
+}  
+@keyframes Globo_Hat-7y8-15s{
+  0%{bottom: -45px; left: -6px;} 
+  30%{bottom: 133px; left: -35px;}
+  100%{bottom: 133px;
+  left: -35px;}
+} 
+@keyframes Globo_Hat-3y4y11-15s{
+  0%{bottom: -49px; left: -39px;} 
+  30%{bottom: 125px; left: -65px;}
+  100%{bottom: 125px;
+  left: -65px;}
+} 
+@keyframes Globo_Hat-12-15s{
+  0%{bottom: -126px; left: -38px; width: 178px; height: 139px;} 
+  30%{width: 509px; height: 400px; bottom: -150px; left: -239px;}
+  100%{width: 509px; height: 400px; bottom: -150px; left: -239px;}
+} 
+
+/*--- BIGOTES (15s) ---*/
+@keyframes Globo_Bigotes-15s{
+  0%{transform: scale(1);top: 59px; left: 50px;} 
+  30%{transform: scale(1.6);top: 40px; left: 10px;}
+  100%{transform: scale(1.6);top: 40px; left: 10px;}
+}  
+/*--- CONT-OJOS (15s) ---*/
+@keyframes Globo_Cont-Ojos-15s{
+  0%{transform: scale(1); top: 8px; left: -2px;  width: 60px;} 
+  30%{transform: scale(3); top: 60px; left: 85px; width: 68px;}
+  100%{transform: scale(3); top: 60px; left: 85px; width: 68px;}
+}  
+/*--- CONT-OREJAS (15s) ---*/
+@keyframes Globo_Cont-Orejas-15s{
+  0%{transform: scale(1); top: 58px; left: 49px;} 
+  30%{transform: scale(1.6); top: -80px; left: -15px;}
+  100%{transform: scale(1.6); top: -80px; left: -15px;}
+}  
+/*--- OREJA1 (15s) ---*/
+@keyframes Globo_Oreja1-15s{
+  0%{transform: rotate(0deg);} 
+  10%{transform: rotate(-15deg);}
+  30%{transform: rotate(-20deg);}
+  100%{transform: rotate(-20deg);}
+}  
+/*--- OREJA2 (15s) ---*/
+@keyframes Globo_Oreja2-15s{
+  0%{transform: rotate(0deg);top: -58px; left: 24px;} 
+  30%{transform: rotate(20deg);top: -50px; left: 79px;}
+  100%{transform: rotate(20deg);top: -50px; left: 79px;}
+}  
+/*--- GATO (15s) ---*/
+@keyframes Globo_Gato-15s{
+  0%{transform: rotate(0deg); left: calc(50% - 80px);} 
+  25%{transform: rotate(23deg);}
+  30%{transform: rotate(27deg); left: calc(50% - 150px);}
+  45%{transform: rotate(23deg);}
+  60%{transform: rotate(27deg);}
+  75%{transform: rotate(23deg);}
+  90%{transform: rotate(27deg);}
+  100%{transform: rotate(25deg); left: calc(50% - 580px);}
+}  
+/*--- SOMBRA (15s) ---*/
+@keyframes Globo_Smbr-gato-15s{
+  0%{width: 180px; height: 36px;
+  bottom: calc(50% - 168px);
+  left: calc(50% - 80px);
+  transform: translateX(0);} 
+
+  30%{width: 240px; height: 66px;
+  bottom: calc(50% - 183px);
+  left: calc(50% - 150px);
+  transform: translateX(-100px);}
+  
+  100%{width: 280px; height: 66px;
+  left: calc(50% - 580px);
+  bottom: calc(50% - 183px);
+  transform: translateX(-100px);}
+}  
+
+
+
+    /*--- ANIMACION OVNI (3s + 20s) ---*/
+/*--- OVNI-PRE (3s) --- */
+@keyframes Ovni_Pre-3s{
+  0%{transform: rotate(-10deg) scale(.5);
+  left: calc(50% + 480px);}
+  100%{transform: rotate(-10deg) scale(.5);
+  left: calc(50% - 510px);}
+} 
+/*--- OVNI (20s) --- */
+@keyframes Ovni-20s{
+  0%{left: calc(50% - 460px); transform: rotate(10deg); z-index: 10;}
+  8%{transform: rotate(-1deg);}
+  9%{left: calc(50% + 10px); transform: rotate(0deg);}
+  66%{z-index: 10;}
+  66.1%{z-index: 9;}
+  92%{left: calc(50% + 10px); transform: rotate(0deg);}  
+  93%{left: calc(50% + 10px); transform: rotate(-10deg);}  
+  100%{left: calc(50% - 660px); transform: rotate(-10deg); z-index: 9;}
+}
+/*--- RAYO (20s) --- */
+@keyframes Ovni_Rayo-20s{
+  0%, 10%{height: 0; -webkit-clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%); clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);}
+  17%, 62%{height: 300px; -webkit-clip-path: polygon(45% 0%, 55% 0%, 75% 100%, 25% 100%); clip-path: polygon(45% 0%, 55% 0%, 75% 100%, 25% 100%);}  
+  65%, 100%{height: 0; -webkit-clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%); clip-path: polygon(45% 0%, 55% 0%, 55% 100%, 45% 100%);}
+}
+/*--- OJOS (16s) ---*/
+@keyframes Ovni_Ojo1-16s{
+  /*empieza a subir*/
+  0%{height: 0px;}
+  0.50%, 3.25%{height: 24px;}
+  3.75%{height: 0px;}
+  4.25%, 13.25%{height: 24px;}
+  13.75%{height: 0px;}
+  14.25%, 20.75%{height: 24px;}
+  21.25%{height: 0px;}
+  21.75%, 32%{height: 24px;}
+  32.5%{height: 0px;}
+  33%, 42%{height: 24px;}
+  42.5%{height: 0px;}
+  43%, 50.5%{height: 24px;}
+  /*asoma*/
+  57.5%{height: 0px;}
+  58%, 77.75%{height: 15px;}
+  78.25%{height: 0px;}
+  78.75%, 83.25%{height: 15px;}
+  /* se incorpora */
+  83.75%, 85.75%{height: 21px;} 
+  86.25%, 87%{height: 0px;}
+  87.5%, 89.5%{height: 21px;} 
+  /*arranca*/
+  90%{height: 0px;}
+  90.5%, 100%{height: 15px;}
+}
+@keyframes Ovni_Ojo2-16s{
+  /*empieza a subir*/
+  0%{height: 0px;}
+  0.50%, 3.25%{height: 24px;}
+  3.75%{height: 0px;}
+  4.25%, 13.25%{height: 24px;}
+  13.75%{height: 0px;}
+  14.25%, 20.75%{height: 24px;}
+  21.25%{height: 0px;}
+  21.75%, 32%{height: 24px;}
+  32.5%{height: 0px;}
+  33%, 42%{height: 24px;}
+  42.5%{height: 0px;}
+  43%, 50.5%{height: 24px;}
+  /*asoma*/
+  57.5%{height: 0px;}
+  58%, 77.75%{height: 15px;}
+  78.25%{height: 0px;}
+  78.75%, 83.25%{height: 15px;}
+  /* se incorpora */
+  83.75%, 85.75%{height: 21px;} 
+  86.25%, 87%{height: 18px;}
+  87.5%, 89.5%{height: 21px;} 
+  /*arranca*/
+  90%{height: 0px;}
+  90.5%, 100%{height: 15px;}
+}
+@keyframes Ovni_Pupilas-16s{
+  /*empieza a subir*/
+  0%, 8.75%{left: 10px; width: 4px; top: calc(-10px + 50%);}
+  9.25%, 12.5%{left: 15px; top: calc(-10px + 50%);}
+  13%, 18.25%{left: 8px;  top: calc(-10px + 50%);}
+  18.75%, 23.25%{left: 10px; top: calc(-10px + 50%);}
+  23.75%, 32.5%{left: 10px; top: calc(-13px + 50%);}
+  /* 33%, 33.5%{left: 10px; width: 4px; top: calc(-7px + 50%);} */
+  /* 34%, 50%{left: 4px; width: 17px; top: calc(-7px + 50%);} */
+  33%, 35.5%{left: 10px; top: calc(-7px + 50%);}
+  36%, 50%{left: 10px; top: calc(-10px + 50%);}
+  /*asoma*/
+  57.5%{left: 10px; top: calc(-10px + 50%);}
+  60%, 71.25%{left: 4px;}
+  72.5%, 82.5%{left: 15px;}
+  /* se incorpora */
+  83.25%, 83.75%{left: 10px;}
+  /*arranca*/
+  90%{left: 10px;}
+  91.25%, 100%{left: 4px; width: 4px; top: calc(-10px + 50%);}
+
+}
+/*--- GATO (20s) --- */
+@keyframes Ovni_Gato-20s{
+  0%, 18%{transform: scale(1) translateY(0) rotate(0deg);
+  bottom: calc(50% + 70px); 
+  left: calc(50% - 80px); 
+  opacity: 1; -webkit-clip-path: none; clip-path: none;}
+  32%{bottom: calc(50% + 70px); left: calc(50% - 65px);}
+  62%{opacity: 1;}
+  62.1%{opacity: 0;}
+  /*termina de subir*/
+  65%{transform: scale(.2) translateY(100px) rotate(10deg);
+  bottom: calc(50% + 190px); left: calc(50% - 70px); opacity: 0; -webkit-clip-path: none; clip-path: none;}
+  /*asoma*/
+  66.1%{transform: scale(.35) translateY(275px) rotate(0deg); bottom: calc(50% + 249px); left: calc(50% - 73px); opacity: .9;
+  -webkit-clip-path: ellipse(140px 105px at 65px -105px); clip-path: ellipse(140px 105px at 65px -105px);}
+  71%, 85%{bottom: calc(50% + 273px); left: calc(50% - 73px);
+  -webkit-clip-path: ellipse(140px 105px at 65px -37px); clip-path: ellipse(140px 105px at 65px -37px);}
+  87%{bottom: calc(50% + 300px); left: calc(50% - 72px); 
+  -webkit-clip-path: ellipse(150px 105px at 64px 40px); clip-path: ellipse(150px 105px at 64px 40px);}
+  /*arranca*/
+  92%{transform: scale(.35) translateY(275px) rotate(0deg);
+  bottom: calc(50% + 300px); left: calc(50% - 72px);}
+  93%{transform: scale(.35) translateY(275px) rotate(-9deg); bottom: calc(50% + 302px); left: calc(50% - 67px);}
+  100%{transform: scale(.35) translateY(275px) rotate(-10deg); 
+  bottom: calc(50% + 310px);left: calc(50% - 743px); 
+  opacity: .9; -webkit-clip-path: ellipse(150px 105px at 64px 40px); clip-path: ellipse(150px 105px at 64px 40px);}
+}
+/*--- SOMBRA (20s) ---*/
+@keyframes Ovni_Smbr-gato-20s{
+  0%, 18%{width: 180px; height: 36px;
+  bottom: calc(50% - 168px); left: calc(50% - 80px); 
+  opacity: .8;}
+  62%, 100%{width: 45px; height: 9px; 
+  bottom: calc(50% - 110px); left: calc(50% + 0px);
+  opacity: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*--- ANIMACION Girar cabeza (10s) ---
+.cabeza, .cabeza-fondo, .cont-orejas,  .cont-bigotes{
+  animation: Uno 5s infinite;
+}
+@keyframes Uno{
+  0%{transform: rotate(0deg)} 
+  10%{transform: rotate(-5deg)}
+  90%{transform: rotate(-5deg)}
+  100%{transform: rotate(0deg)}
+}  
+
+.cabeza, .cabeza-fondo, .cont-orejas, .cont-bigotes{
+  animation: Gira_Cabeza-5s 5s 0;
+} 
+@keyframes Gira_Cabeza-5s{
+  0%{transform: rotate(0deg)} 
+  30%{transform: rotate(5deg)}
+  70%{transform: rotate(5deg)}
+  100%{transform: rotate(0deg)}
+}
+  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OJOS - otros*/
+
+/*-----  LOOK-AROUND + DILATADOS(60s) -----*/
+@keyframes ojo_Blink-basic_Blink-wide-60s{
+/*blink-basic(s.0-s.15)*/
+  0%{height: 0px;}
+  0.25%, 4.75%{height: 20px;}
+  5%{height: 0px;}        /*close*/
+  5.5%, 12.5%{height: 20px;}
+  13%{height: 0px;}
+  13.5%, 19.5%{height: 20px;}
+  20%{height: 0px;}
+  20.5%, 24.5%{height: 20px;}
+/*blink-wide(s.15-s.30)*/
+  25%{height: 0px;}
+  26%{height: 18px;}
+  26.1%, 30.5%{height: 24px;}
+  31%{height: 0px;}
+  31.5%, 37.5%{height: 24px;}
+  38%{height: 0px;}
+  38.5%, 44.5%{height: 24px;}
+  45%{height: 0px;}
+  45.5%, 49.5%{height: 24px;}
+/*blink-basic(s.30-s.45)*/  
+  50%{height: 0px;}
+  50.25%, 51.75%{height: 24px;}
+  52%{height: 0px;}
+  52.25%, 54.75%{height: 20px;}
+  55%{height: 0px;}
+  55.25%, 60.25%{height: 20px;}
+  61%, 69%{height: 0px;}/*close*/
+  69.75%, 74.5%{height: 20px;}
+  75%{height: 0px;}
+/*blink-basic(s.45-s.60)*/
+  75.5%, 82.75%{height: 20px;}
+  83%{height: 0px;}
+  83.25%, 87.25%{height: 20px;}
+  88%, 93.5%{height: 0px;}
+  94.25%, 99.5%{height: 20px;}
+  100%{height: 0px;}
+}
+@keyframes pup_Look-around_Dilatados-60s{
+/*look-around(s.0-s.15)*/     
+  0%, 6.25%{width: 4px; left: 10px; top: calc(-10px + 50%);}
+  6.75%, 12.5%{left: 7px;}
+  13%, 18.75%{left: 14px;}
+  19.25%, 25.75% {left: 8px;} 
+  26%{width: 4px; left: 16px; top: calc(-10px + 50%);}
+/*DILATADOS(s.15-s.30)*/
+  26.1%{width: 22px; left: 6px; top: calc(-9px + 50%);}
+  28.75%{width: 22px; left: 6px; top: calc(-8px + 50%);}
+  32.5%{width: 22px; left: 6px;}
+  35.75%{width: 22px; left: 4.5px;}
+  36.25%{width: 22px; left: 6px;}
+  37.5%{width: 22px; left: 4px;}
+  40%{width: 22px; left: 3px;}
+  42.5%{width: 22px; left: 0px;}
+  43%{width: 22px; left: 1px;}
+  45%{width: 22px; left: -2px;}
+  46.25%{width: 22px; left: -1px;}
+  47.5%{width: 22px; left: -3px;}
+  48.75%{width: 22px; left: -2px;}
+  49.5%{width: 22px; left: -4px;}
+/*look-around(s.30-s.45)*/
+  50%, 51.75%{width: 22px; left: -5px; top: calc(-8px + 50%);}
+  52.25%, 55.25%{width: 4px; left: 5px; top: calc(-10px + 50%);}
+  55.75%, 62.5%{left: 11px;}
+  63%, 68.75%{left: 8px;}
+  69.25%, 74.25%{left: 15px;}
+/*look-around(s.45-s.60)*/    
+  75%, 79.25%{left: 12px;}
+  79.75%, 80.5%{left: 8px;}
+  88%, 93.75%{left: 7px;}
+  94.25%, 99.25%{left: 15px;}
+  100%{width: 4px; left: 10px; top: calc(-10px + 50%);}
+}
+/*-----  LOOK-AROUND (10s) -----*/
+@keyframes ojo_Blink-basic-10s{
+  0%{height: 0px;}
+  2%, 23%{height: 20px;}
+  25%{height: 0px;}
+  27%, 73%{height: 20px;}
+  75%{height: 0px;}
+  77%, 98%{height: 20px;}
+  100%{height: 0px;}
+}
+@keyframes pup_Look-around1-10s{
+  0%, 25%{left: 10px;}
+  27%, 50%{left: 8px;}
+  52%, 75%{left: 10px;}
+  77%, 98%{left: 16px;}
+  100%{left: 10px;}
+}
+/*----- DILATADOS (10s) -----*/
+@keyframes ojo_Blink-wide-10s{
+  0%{height: 0px;}
+  2%, 23%{height: 24px;}
+  25%{height: 0px;}
+  27%, 73%{height: 24px;}
+  75%{height: 0px;}
+  77%, 98%{height: 24px;}
+  100%{height: 0px;}
+}
+@keyframes pup_Dilatados-10s{
+  0%, 23%{width: 22px; left: 2px;}
+  25%, 98%{width: 22px; left: 0px;}
+  100%{width: 22px; left: 2px;}
+}
+/*----- DESCONFIADO (10s) -----*/
+@keyframes ojo_Blink-small-10s{
+  0%{height: 0px;}
+  1%, 24%{height: 5px;}
+  25%{height: 0px;}
+  26%, 64%{height: 5px;}
+  65%{height: 0px;}
+  66%,99%{height: 5px;}
+  to{height: 0px;}
+}
+@keyframes pup_Look-around2-10s{
+  0%, 25%{width: 4px; left: 18px;}
+  27%, 50%{width: 4px; left: 8px;}
+  52%, 100%{width: 4px; left: 18px;}
+}
+/*---Animacion Mosca (60s)---*/
+@keyframes Eje-X-60s{
+  0%, 25%{right: 0%; opacity: 0;}
+  25.25%{opacity: 1;}
+  30%{right: 25%;}
+  31.25%{right: 21.25%;}
+  35%{right: 47.5%;}
+  36.25%{right: 42.5%;}
+  37.5%{right: 52.5%;}
+  38.25%{right: 48.75%;}
+  42.5%{right: 75%;}
+  43%{right: 71.25%;}
+  45%{right: 83.75%;}
+  46.25%{right: 77.5%;}
+  47.5%{right: 93.75%;}
+  48.75%{right: 87.5%;}
+  49.95%{opacity: 1;}
+  50%, 100%{right: 102%; opacity: 0;}
+}

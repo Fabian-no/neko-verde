@@ -1,0 +1,319 @@
+
+/* ---- GATO ---- */
+.Gato{
+  position: absolute;
+  z-index: 10;
+  transform: scale(1);
+  padding: 0px 90px;
+  bottom: calc(50% + 70px);
+  left: calc(50% - 80px);
+  z-index: 80;
+  opacity: 1;
+  
+  /* pozo */
+  /* transform: rotate(-5deg);
+  bottom: calc(50% + 30px); 
+  left: calc(50% - 180px);
+  clip-path: ellipse(340px 160px at 100px 82px);
+
+  bottom: calc(50% - 250px); 
+  left: calc(50% - 225px);
+  clip-path: ellipse(340px 160px at 161px -190px); */
+
+
+  /* ovni  */
+  /* transform: scale(.35) translateY(275px) rotate(0deg); bottom: calc(50% + 249px); left: calc(50% - 73px); opacity: .9;
+  clip-path: ellipse(140px 105px at 65px -105px); */
+
+  /* bottom: calc(50% + 273px); left: calc(50% - 73px);
+  clip-path: ellipse(140px 105px at 65px -37px); */
+
+  /* opacity: 1; 
+  z-index: 10;
+  transform: scale(.35) translateY(275px) rotate(0deg);
+  left: calc(50% - 72px);
+  bottom: calc(50% + 300px); 
+  clip-path: ellipse(150px 105px at 64px 40px);
+
+  transform: scale(.35) translateY(275px) rotate(-9deg);
+  left: calc(50% - 67px);
+  bottom: calc(50% + 302px); */
+}
+.raya{
+  position: absolute;
+  background: #3b6e23;
+  height: 4px;
+}
+.cabeza, 
+.cuerpo, 
+.cola1, 
+.ojo{
+  border-color: #3b6e23;
+}
+.cabeza, 
+.cuerpo-fondo,
+.or-D{
+  background: #ffffff;
+}
+.ojo{
+  background: #ccc932;
+  background: #ccc932d7;
+}  
+.bigote{
+  position: absolute;
+  background: #275315;
+  opacity: .5;
+  height: 2px;
+}
+.Sombra{
+  background: #00000067;
+  opacity: .8;
+  /* background: #000000;
+  opacity: .3; */
+  box-shadow: 0px 0px 4px #2e2e2e;
+  box-shadow: 0px 0px 5px #242424d8;
+  /*ver color y opacidad*/
+}
+
+
+
+
+/*---  Cuerpo posiciones ---*/
+/*orejas*/
+.cont-orejas{
+  position: absolute;
+  top: 58px;
+  left: 49px;
+  z-index: -3;
+
+  /* transform: scale(1.6);
+  top: -80px;
+  left: -15px; */
+
+}
+.oreja1{
+  position: absolute;
+  top: -58px;
+  left: -20px;
+  transform: rotate(0deg);
+
+  /* transform: rotate(-15deg); */
+}
+.oreja2{
+  position: absolute;
+  top: -58px;
+  left: 24px;
+  transform: rotate(0deg);
+
+  /* transform: rotate(20deg);
+  top: -50px;
+  left: 79px; */
+}
+.or-D{/*or diagonal */
+  position: absolute;
+  border-top: 4px solid #3b6e23;
+  -webkit-clip-path: polygon(100% 0px, 10px 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0px, 10px 100%, 0 100%, 0 0);
+  height: 20px;
+  width: 31px;
+  top: 9px;
+  left: -18px;
+  transform: rotate(-50deg);
+}
+.or-V{/*or vertical*/
+  width: 4px;
+  height: 26px;
+  top: 0px;
+  left: 0px;
+}
+
+/* cabeza*/
+
+.cabeza{
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  /* background: #9c2121; */
+  width: 82px;
+  height: 68px;
+  top: 24px;
+  left: 8px;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 72%, calc(100% - 4px) 72%, 61% calc(100% - 4px), 61% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 72%, calc(100% - 4px) 72%, 61% calc(100% - 4px), 61% 100%, 0 100%);
+  overflow: hidden;
+
+  /* globo
+  border-radius: 50%; 
+  width: 263px; 
+  height: 253px; 
+  top: -154px; 
+  left: -120px;  
+  clip-path: polygon(0 0, 100% 0, 100% 91%, calc(100% - 24%) 91%, 63% calc(100% - 3.5%), 63% 100%, 0 100%); */
+}
+/* ojos*/
+.cont-ojos{
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  top: 8px;
+  left: -2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  /* globo
+  transform: scale(3);
+  width: 68px;
+  top: 60px;
+  left: 85px; */
+
+}
+.ojo{
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  height: 2px;
+  width: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pupila{
+  position: relative;
+  width: 4px;
+  height: 20px;
+  background: #000000;
+  border-radius: 50%;
+  top: calc(-10px + 50%);
+  left: 8px;
+}
+/* bigotes*/
+.cont-bigotes{
+  position: absolute;
+  top: 59px;
+  left: 50px;
+}
+
+/* cuerpo*/
+.cuerpo{
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  width: 100px;
+  height: 144px;
+  top: 72px;
+  left: 42px;
+  z-index: -3;
+  opacity: 1;
+  -webkit-clip-path: polygon(38px 0, 100px 0, 100px 112px, 95px 112px, 95px 140px, 100px 140px, 100px 144px, 0 144px, 0 20px, 4px 20px, 38px 4px);
+          clip-path: polygon(38px 0, 100px 0, 100px 112px, 95px 112px, 95px 140px, 100px 140px, 100px 144px, 0 144px, 0 20px, 4px 20px, 38px 4px);
+}
+.cuerpo-fondo{
+  position: absolute;
+  height: 142px;
+  width: 98px;
+  top: 73px;
+  left: 43px;
+  z-index: -8;
+}
+/* pata */
+.pata{
+  width: 72px;
+  top: 172px;
+  left: 24px;
+  transform: rotate(90deg);
+  z-index: -3;
+}
+/* cola  */
+.cola1{
+  border-width: 4px;
+  border-style: solid;
+  background: #ffffff00; 
+  width: 63px;
+  height: 37px;
+  border-radius: 50%;
+  top: 197px;
+  left: 96px;
+  z-index: -3;
+  -webkit-clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 50% 0, 50% 100%, 100% 100%);
+}
+.cola2{
+  width: 34px;
+  top: 230px;
+  left: 96px;
+  transform: rotate(0deg);
+} 
+/* cola movible*/
+.c8{
+  width: 20px;
+  top: 230px;
+  left: 76px;
+  transform: rotate(0deg);
+} 
+.c9{
+  width: 20px;
+  top: 230px;
+  left: 56px;
+  transform: rotate(0deg);
+} 
+.c10{
+  width: 6px;
+  top: 230px;
+  left: 50px;
+  transform: rotate(0deg);
+} 
+
+/*bigotes cont...*/
+.big1{
+  width: 28px;
+  top: 7px;
+  left: -54px;
+  transform: rotate(15deg);
+}
+.big2{
+  width: 28px;
+  top: 15px;
+  left: -56px;
+}
+.big3{
+  width: 28px;
+  top: 23px;
+  left: -54px;
+  transform: rotate(-15deg);
+}
+
+.big4{
+  width: 30px;
+  top: 7px;
+  left: -6px;
+  transform: rotate(-15deg);
+}
+.big5{
+  width: 30px;
+  top: 15px;
+  left: -4px;
+}
+.big6{
+  width: 30px;
+  top: 23px;
+  left: -6px;
+  transform: rotate(15deg);
+}
+
+/*--- sombra ---*/
+.Sombra-gato{
+  position: absolute;
+  width: 180px;
+  height: 36px;
+  border-radius: 50%;
+  z-index: 8;
+  bottom: calc(50% - 168px);
+  left: calc(50% - 80px);
+  /* opacity: .8; */
+    /* opacity: 0; */
+}
+
+/*---  fin - Cuerpo posiciones ---*/
+

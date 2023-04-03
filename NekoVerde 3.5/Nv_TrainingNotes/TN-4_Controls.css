@@ -1,0 +1,445 @@
+
+/* -- CONTROLS -- */
+
+.Controls{
+  max-height: 400px;
+  max-height: 360px;
+}
+
+.C-RyF{
+  position: relative;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.C-Auto{
+  position: relative;
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 46%;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.C-Botones{
+  position: relative;
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 34%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.C-Auto:before,
+.C-Botones:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 85%;
+  height: 1px;
+  background: #9b9b9b85;
+}
+
+
+/* C - RANDOM y FIFTH */
+.b-RyF{
+  cursor: pointer;
+  width: 80%;
+  border-radius: 6px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+}
+.b-RyF div{
+  width: 50%;
+}
+.b-Rndm{
+  background: #425663;
+  color: antiquewhite;
+  font-size: 23px;
+  padding: 4px 0;
+}
+.b-Fifth{
+  background: #537083;
+  color: antiquewhite;
+  font-size: 21px;
+  letter-spacing: 2px;
+  padding-top: 5px;
+}
+.b-Fifth span{
+  font-size: 70%;
+  letter-spacing: 0;
+}
+.b-RyF_ON{
+  width: 52%!important;
+  background: #92402b;
+  box-shadow: 0 0 4px #1f1d1d;
+  z-index: 10;
+}
+
+/* C - AUTO */
+.timer-label{
+  font-size: 15px;
+  text-align: center;
+}
+
+/* C-Timer */
+.C-Timer{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.b-Cstm{
+  cursor: pointer;
+  width: 36%;
+  background: #eceff1;
+  border: 1px solid #acbecf;
+  border-radius: 6px;
+  color: #8099b4;
+  text-align: center;
+  font-size: 16px;
+  padding: 4px 0;
+}
+.b-Cstm:before{
+  margin-right: -1px;
+}
+
+.timer{
+  width: 64%;
+  font-size: 11px;
+  border: none;
+  background: #eceff1;
+  border-radius: 6px;
+  color: #374249;
+  padding-left: 2px;
+  outline: none;
+}
+
+/* b-Play */
+.b-Play{
+  position: relative;
+  cursor: pointer;
+  width: 80%;
+  border-radius: 6px;
+  
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+}
+.b-Play::before{
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  width: 1px;
+  height: 80%;
+  background: #d6ccbe;
+}
+.b-PlayB,
+.b-PlayF{
+  background: #537083;
+  color: antiquewhite;
+  width: 50%;
+  font-size: 18px;
+  padding: 5px 0;
+}
+.b-Play div:first-child{
+  transform: rotate(180deg);
+}
+.icon-pause::before{
+  position: relative;
+  top: 1px;
+}
+.b-BwdRotate{
+  transform: rotate(0deg)!important;
+}
+.b-Play_ON{
+  width: 55%!important;
+  background: #92402b!important;
+  box-shadow: 0 0 4px #1f1d1d;
+  z-index: 10;
+}
+/* C - BOTONES */
+.b-Prev,
+.b-Next{
+  cursor: pointer;
+  width: 60%;
+  background: #29658d;
+  border-radius: 6px;
+  color: antiquewhite;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.b-FifthYPrev_OFF{
+  cursor: default;
+  background: #868585!important;
+}
+
+
+
+
+/*HEIGHT < 480px  (Hrz)*/
+@media (min-height: 380px){
+  .b-Rndm{
+    padding: 7px 0;
+  }
+  .b-Fifth{
+    padding-top: 8px;
+  }
+  .b-Fifth2{
+    padding-top: 6px!important;
+  }
+
+  .b-Cstm{
+    font-size: 17px;
+    padding: 4px 0;
+  }
+
+  .b-Play div{
+    font-size: 19px;
+    padding: 7px 0;
+  }
+
+  .b-Prev,
+  .b-Next{
+    font-size: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+
+/* HEIGHT > 480px (Vrt)*/
+@media (max-width: 769px) and (min-height: 480px){
+  .Controls{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .C-RyF{
+    height: 100%;
+    width: 30%;
+  }
+  .C-Auto{
+    height: 100%;
+    width: 46%;
+    flex-flow: row wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    padding: 8px 0 2px;
+  }
+  .C-Botones{
+    height: 100%;
+    width: 24%;
+  }
+  /*b-RyF*/
+  .b-Rndm{
+    padding: 10px 0;
+  }
+  .b-Fifth{
+    padding-top: 11px;
+  }
+  .b-Fifth2{
+    padding-top: 9px!important;
+  }
+ 
+  /*c-auto*/
+  .timer-label{
+    font-size: 10px;
+  }
+  .C-Timer{
+    width: 53%;
+    max-width: 120px;
+  }
+  
+  .b-Cstm{
+    font-size: 17px;
+    padding: 4px 0;
+  }
+  .timer{
+    font-size: 11px;
+  }
+
+  .b-Play{
+    width: 87%;
+    max-width: 240px;
+  }
+  .b-Play div{
+    font-size: 19px;
+    padding: 4px 0;
+  }
+  /*b-NyP*/
+  .b-Prev,
+  .b-Next{
+    width: 70%;
+    font-size: 29px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .C-Auto:before,
+  .C-Botones:before{
+    top: unset;
+    left: 0;
+    width: 1px;
+    height: 70%;
+  }
+}
+
+
+@media (min-width: 400px) and (max-width: 480px)  and (min-height: 480px){
+  .timer-label{
+    font-size: 12px;
+  }
+  .timer{
+    font-size: 12px;
+    padding-left: 4px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 769px) and (min-height: 480px){
+  /*c-auto*/
+
+  .timer-label{
+    font-size: 13px;
+  }
+  .C-Timer{
+    width: 50%;
+    max-width: 120px;
+  }
+  
+  .b-Cstm{
+    padding: 4px 0;
+  }
+  .timer{
+    font-size: 13px;
+    padding-left: 8px;
+  }
+
+  .b-Play{
+    width: 85%;
+    max-width: 240px;
+  }
+}
+
+
+/* WIDTH > 769px (Hrz)*/
+@media (min-width: 769px){
+  .timer{
+    font-size: 12px;
+    padding-left: 3px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COLORES */
+/* -- CONTROLS -- */
+.C-Auto:before,
+.C-Botones:before{
+  background: #9b9b9b85;
+}
+
+/*b-RyF*/
+.b-Rndm{
+  background: #425663;
+  color: antiquewhite;
+}
+.b-Fifth{
+  background: #537083;
+  color: antiquewhite;
+}
+.b-RyF_ON{
+  width: 52%!important;
+  background: #92402b;
+  box-shadow: 0 0 4px #1f1d1d;
+  z-index: 10;
+}
+.b-Fifth_OFF{
+  background: #868585!important;
+}
+
+/*timer*/
+.b-Cstm{
+  background: #eceff1;
+  border: 1px solid #acbecf;
+  color: #8099b4;
+}  
+.timer{
+  background: #eceff1;
+  color: #374249;
+}
+
+/*b-play*/
+.b-Play::before{
+  background: #d6ccbe;
+}
+.b-PlayB,
+.b-PlayF{
+  background: #537083;
+  color: antiquewhite;
+}
+.b-Play_ON{
+  width: 55%!important;
+  background: #92402b!important;
+  box-shadow: 0 0 4px #1f1d1d;
+  z-index: 10;
+}
+
+/*b-next y prev*/
+.b-Prev,
+.b-Next{
+  background: #346483;
+  color: antiquewhite;
+}
+.b-Prev_OFF{
+  background: #868585!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

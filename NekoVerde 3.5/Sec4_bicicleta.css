@@ -1,0 +1,511 @@
+
+@import url(Nv_MidoriNoCat/Gato_2-gato.css);
+@import url(Nv_MidoriNoCat/Gato_4-keyframes.css);
+@import url(Nv_MidoriNoCat/Gato_5-anims-hovers.css);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Gato*/
+.Gato{
+  bottom: 310px;
+  left: 120px;
+}
+
+/*BICI*/
+
+/* .Caja-Bici{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 110;
+} */
+
+/* .Bici{
+  position: absolute;
+  top: 60vh;
+  left: 20%;
+  transform: scale(.5); 
+}
+
+@media (min-height: 500px){
+  .Bici{
+    transform: scale(.8); 
+  }
+}
+@media (min-height: 500px){
+  .Bici{
+    transform: scale(.8); 
+  }
+} */
+
+
+/* RUEDA */
+.Rueda-ext{
+  position: absolute;
+  border: 11px solid #1a1919;
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  transition: transform 4s linear;
+}
+.Rueda-ext:hover{
+  transform: rotate(360deg);
+}
+.rue1{
+  bottom: -201px;
+  /* left: 69px; */
+  left: 369px;
+}
+.rue2{
+  bottom: -201px;
+  /* left: -291px; */
+  left: 9px;
+}
+.Rueda-int{
+  position: relative;
+  border: 3px solid #494949;
+  width: 193px;
+  height: 193px;
+  border-radius: 50%;
+  top: -3px;
+  left: -3px;
+}
+.Rayo{
+  position: absolute;
+  border: 1px solid #292828;
+  width: 3px;
+  height: 198px;
+  top: -5px;
+  left: calc(-.5px + 50%);
+}
+.ry1{
+  transform: rotate(10deg);
+}
+.ry2{
+  transform: rotate(46deg);
+}
+.ry3{
+  transform: rotate(82deg);
+}
+.ry4{
+  transform: rotate(118deg);
+}
+.ry5{
+  transform: rotate(154deg);
+}
+
+
+/* CUADRO */
+/* cuerpo B */
+.Caja-cuerpoB{
+  position: absolute;
+  top: -50px;
+  /* left: -140px; */
+  left: 160px;
+}
+.CuerpoB1{
+  position: absolute;
+  background: #292828;
+  width: 205px;
+  height: 10px;
+  border-radius: 0%;
+  top: -13px;
+  left: 59px;
+  transform: rotate(-6deg);
+}
+.CuerpoB2{
+  position: absolute;
+  background: #292828;
+  width: 240px;
+  height: 8px;
+  border-radius: 0%;
+  top: 70px;
+  left: 60px;
+  transform: rotate(-46deg);
+} 
+/* fin cuerpos*/
+
+.Caja-cuadro{
+  position: absolute;
+  /* left: -240px; */
+  left: 60px;
+}
+.EjeDel{
+  position: absolute;
+  border-bottom: 8px solid #292828;
+  width: 320px;
+  height: 50px;
+  top: -85px;
+  left: 226px;
+  border-radius: 25%;
+  transform: rotate(75deg);
+  -webkit-clip-path: polygon(25% 25%, 25% 100%, 100% 100%, 100% 25%);
+          clip-path: polygon(25% 25%, 25% 100%, 100% 100%, 100% 25%);
+}
+
+
+.EjeTras{
+  position: absolute;
+  border-bottom: 8px solid #292828;
+  width: 182px;
+  height: 0px;
+  top: 6px;
+  left: 80px;
+  border-radius: 0%;
+  transform: rotate(75deg);
+}
+.EjeRue1{
+  position: absolute;
+  border-bottom: 7px solid #292828;
+  width: 142px;
+  height: 0px;
+  top: 97px;
+  left: 56px;
+  border-radius: 0%;
+  transform: rotate(4deg);
+} 
+.EjeRue2{
+  position: absolute;
+  border-bottom: 7px solid #292828;
+  width: 180px;
+  height: 0px;
+  top: 23px;
+  left: 12px;
+  border-radius: 0%;
+  transform: rotate(-54deg);
+}
+
+.guardabarros-Del{
+  position: absolute;
+  border-top: 6px solid #292828;
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
+  top: -18px;
+  left: 304px;
+  transform: rotate(-25deg);
+}
+.guardabarros-Tras{
+  position: absolute;
+  border-top: 6px solid #292828;
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
+  top: -18px;
+  left: -52px;
+  transform: rotate(20deg);
+}
+
+.CentroRueda-Del{
+  position: absolute;
+  background:#020202f6;
+  width: 12px;
+  height: 12px;
+  top: 89px;
+  left: 407px;
+  border-radius: 50%;
+}
+.CentroRueda-Tras{
+  position: absolute;
+  background:#020202f6;
+  width: 20px;
+  height: 20px;
+  top: 85px;
+  left: 44px;
+  border-radius: 50%;
+}
+.Cadena1{
+  position: absolute;
+  background:#020202f6;
+  width: 140px;
+  height: 2px;
+  top: 85px;
+  left: 50px;
+  transform: rotate(-2deg);
+}
+.Cadena2{
+  position: absolute;
+  background:#020202f6;
+  width: 140px;
+  height: 2px;
+  top: 114px;
+  left: 50px;
+  transform: rotate(10deg);
+}
+
+
+/* PEDALES */
+.CajaPedal-ext{
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  bottom: -134px;
+  /* left: -70px; */
+  left: 230px;
+}
+
+.CajaPedal-med{
+  position: relative;
+  border: 3px solid #292828;
+  background: #ffffff;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  bottom: 0;
+  left: 0;  
+}
+.CajaPedal-int{
+  position: relative;
+  border: 2px solid #292828;
+  background: #ffffff;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+}
+
+.Pedal-front{
+  position: relative;
+  background: #292828;
+  height: 6px;
+  width: 49px;
+  top: calc(50% - 3px);
+  left: calc(50% - 3px);
+  border-radius: 3px;
+}
+.Pedal-back{
+  position: relative;
+  background: #292828;
+  height: 6px;
+  width: 47px;
+  top: calc(50% - 9px);
+  left: calc(-50% - 11px);
+  border-radius: 3px;
+   z-index: -10;
+}
+.Tornillo{
+  position: relative;
+  border: .5px solid #ffffff;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  top: 1.5px;
+  left: 1.5px;
+}
+.P-F{
+  position: relative;
+  border: 0px solid #ffffff;
+  background: #292828;
+  height: 8px;
+  width: 30px;
+  top: -4px;
+  left: calc(100% - 18px);
+  border-radius: 2px;
+}
+.P-B{
+  position: relative;
+  border: 0px solid #ffffff;
+  background: #292828;
+  height: 8px;
+  width: 30px;
+  top: -1px;
+  right: calc(00% + 12px);
+  border-radius: 2px;
+  z-index: -10;
+}  
+.Tornillo-P{
+  position: relative;
+  border: 1px solid #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: 2px;
+  left: calc(50% - 2px);
+}
+
+
+
+/* SILLA */
+.CajaSilla{
+  position: relative;
+  top: -128px;
+  /* left: -137px; */
+  left: 163px;
+}
+
+.s1{
+  position: absolute;
+  background: #1a1919;
+  width: 75px;
+  height: 30px;
+  border-radius: 20%;
+  transform: rotate(-5deg);
+  -webkit-clip-path: ellipse(75px 12px at 14px 10px);
+          clip-path: ellipse(75px 12px at 14px 10px);
+  top: 31px;
+  left: 13px;
+}
+
+/* MANILLAR */
+.CajaManillar{
+  position: relative;
+  border: 0px solid #302121;
+  top: -178px;
+  /* left: 12px; */
+  left: 312px;
+}
+.m1{
+  position: absolute;
+  background:#292828;
+  width: 8px;
+  height: 35px;
+  top: 20px;
+  left: 101px;
+  transform: rotate(42deg)
+}
+.m2{
+  position: absolute;
+  background:#292828;
+  width: 8px;
+  height: 22px;
+  top: 7px;
+  left: 108px;
+  transform: rotate(-20deg);
+}
+.m3{
+  position: absolute;
+  background:#292828;
+  width: 7px;
+  height: 13px;
+  top: 3px;
+  left: 102px;
+  transform: rotate(90deg)
+}
+
+.man1{
+  position: absolute;
+  background:#292828;
+  width: 10px;
+  height: 17px;
+  top: 1px;
+  left: 89px;
+  -webkit-clip-path: ellipse(17px 8.5px at 14px 8.5px);
+          clip-path: ellipse(17px 8.5px at 14px 8.5px);
+}
+.man2{
+  position: absolute;
+  background:#3b3b3b;
+  width: 30px;
+  height: 9px;
+  top: 5px;
+  left: 58px;
+}
+.man3{
+  position: absolute;
+  background:#292828;
+  width: 4px;
+  height: 13px;
+  top: 3px;
+  left: 53px;
+  border-radius: 1px;
+}
+
+
+/*  ANIMACIONES */
+
+/*  RUEDAS Y PEDALES */
+.Rueda-ext{
+  animation: RuedasyPedales-1 7s linear;
+  animation-iteration-count: infinite;
+}
+
+.CajaPedal-ext{
+  animation: RuedasyPedales-1 10s linear;
+  animation-iteration-count: infinite;
+}
+
+.P-F, .P-B{
+  animation: Pies-1 10s linear;
+  animation-iteration-count: infinite;
+}
+/*  RUEDAS Y PEDALES - KEYFRAMES */
+@keyframes RuedasyPedales-1{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+@keyframes Pies-1{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(-360deg);}
+}
+
+/*-----.BICI Y SCALE-----*/
+
+.Caja-Bici{
+  animation: ScaleyOF-Recto2 linear infinite;
+  animation-duration: 24s;
+}
+.Bici{
+  animation: Recto-2 linear infinite;
+  animation-duration: 24s;
+}
+.Gato{
+  animation: Gira-gato linear infinite;
+  animation-duration: 24s;
+}
+@media (min-width: 768px){
+  .Caja-Bici{
+    animation-duration: 34s;
+  }
+  .Bici{
+    animation-duration: 34s;
+  }
+  .Gato{
+    animation-duration: 34s;
+  }
+}
+
+
+
+
+/* RECTO-2 (RyP 7)*/ 
+@keyframes ScaleyOF-Recto2{
+  0%, 46%{transform: scale(1) rotateY(0deg); left: 0px;}
+  50%, 96%{transform: rotateY(180deg); left: 0;}
+  100%{transform: scale(1) rotateY(0deg); left: 0px;}
+}
+/* @keyframes ScaleyOF-Recto2{
+  0%, 46%{transform: scale(1) rotateY(0deg); padding: 50vh 50vw; left: 0px;}
+  50%, 96%{transform: scale(.7) rotateY(180deg); padding: 50vh 71.4vw; left: -21.4vw;}
+  100%{transform: scale(1) rotateY(0deg); padding: 50vh 50vw; left: 0px;}
+} */
+
+@keyframes Recto-2{
+  0%{left: -580px; opacity: 1;}
+  2%{left: -580px; opacity: 1;}
+  45%{left: 100%; opacity: 1;}
+  45.01%{opacity: 0;}
+  49.99%{opacity: 0;}
+  50%{left: -580px; opacity: 1;}
+  95%{left: 100%; opacity: 1;}
+  95.01%{opacity: 0;}
+  99.99%{opacity: 0;}
+  100%{left: -580px; opacity: 1;}
+}
+@keyframes  Gira-gato{
+  0%{transform: rotateY(0deg);}
+  45%{transform: rotateY(0deg);}
+  50%{transform: rotateY(180deg);}
+  95%{transform: rotateY(180deg);}
+  100%{transform: rotateY(0deg);}
+}
+
+

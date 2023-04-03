@@ -1,0 +1,80 @@
+   /*--- pagina 2 - PROYECTS ---*/
+
+/*--- PROYECTS(2) - SECTION 1 ---*/
+.PrS1-Wrap>.C-Foto{
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-position: center;
+  background-size: cover;
+}
+.PrS1-Wrap>.Pr-F1{
+  background-image: url('img/garden-pic1_1920x1079.jpg');
+}
+.PrS1-Wrap>.Pr-F2{
+  background-image: url('img/garden-pic2_1920x1079.jpeg');
+}
+.PrS1-Wrap>.Pr-F3{
+  background-image: url('img/garden-pic3_1920x1079.jpeg');
+}
+.PrS1-Wrap>.Pr-F4{
+  background-image: url('img/garden-pic4_1920x1079.jpg');
+}
+
+/*Tapa*/
+.PrS1-Wrap>.C-Foto>a>.Tapa{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000000a4;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+/*Name*/
+.PrS1-Wrap>.C-Foto>a>.Name{
+  position: absolute;
+  top: 16%;
+  color: #f7eecd;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.PrS1-Wrap>.C-Foto>a>.Name>h2{
+  margin-bottom: 3px;
+}
+.PrS1-Wrap>.C-Foto>a>.Name>h4{
+  margin-bottom: 10px;
+}  
+.PrS1-Wrap>.C-Foto>a>.N-R{
+  right: 15%;
+  text-align: right;
+}
+.PrS1-Wrap>.C-Foto>a>.N-L{
+  left: 15%;
+}
+.PrS1-Wrap>.C-Foto>a>.Name>hr{
+  background: #142718;
+  border: none;
+  width: 0%;
+  height: 6px;
+  transition: width 1s;
+}
+
+.tapaOn{
+  opacity: 1!important;
+}
+.nameOn{
+  opacity: 1!important;
+}
+.rayaOn{
+  width: 100%!important;
+}
+
+
+/*--- @media - PROYECTS(2) - SECTION 1 ---*/
+@media screen and (max-width: 767px){
+  .PrS1-Wrap>.C-Foto{
+    height: 70vh;
+  }
+}

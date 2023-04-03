@@ -1,0 +1,317 @@
+/*--- HOVER ----*/
+
+/* ojos */
+.Gato:hover .ojo{
+  border-width: 1px;
+  height: 5px;
+  animation-iteration-count: 0;/*!*/
+}
+.Gato:hover .pupila{
+  left: 10px;
+  animation-iteration-count: 0;/*!*/
+}
+
+/* orejas */
+.or-D, .or-V{
+  transition: all .05s ease-in;
+}
+.Gato:hover .or-D{
+  width: 36px;
+  top: 15px;
+  left: -18px;
+  transform: rotate(-25deg);
+}
+.Gato:hover .or-V{
+  height: 20px;
+  top: 8px;
+  left: 7px; 
+  transform: rotate(30deg);
+}
+
+
+/*----- ANIMACIONES COLA -----*/
+.c8{animation-name: Cola-8;}
+.c9{animation-name: Cola-9;}
+.c10{animation-name: Cola-9;}
+.c8, .c9, .c10{
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/*  */
+
+
+
+/*----- ANIMACIONES -----*/
+
+/*----- ANIMACIONES OJOS ----- */
+.ojo{
+  animation: LookAround_Ojos-60s 60s infinite;
+}
+.pupila{
+  animation: LookAround_Pupilas-60s 60s infinite;
+} 
+
+
+
+/* ---- Animaciones MOSCA ----*/
+/* ---- Ojos-Mosca ----*/
+.ojo-mosca-after{
+  animation: Mosca_Ojos-after-5s 5s 1;
+}
+.pupila-mosca-after{
+  animation: Mosca_Pupilas-after-5s 5s 1;
+} 
+.ojo-mosca{
+  animation: Mosca_Ojos-15s 15s 1;
+}
+.pupila-mosca{
+  animation: Mosca_Pupilas-15s 15s 1;
+} 
+/* ---- Mosca ----*/
+.Mosca-A_anim{
+  animation: Mosca_EjeX-15s 15s 1 linear;
+}
+.Mosca-B_anim{
+  animation: Mosca_EjeY-15s 15s 1;
+}
+.Mosca-F_anim{
+  animation: Mosca_Rotacion-15s 15s 1;
+}  
+
+
+
+/* ---- Animaciones SKATE ----*/
+/* ---- Ojos-skate ----*/
+.ojo-skt{
+  animation: Skt_Ojos-10s 10s linear 1;
+}
+.pupila-skt{
+  animation: Skt_Pupilas-10s 10s linear 1;
+}
+/* ---- Gato-skate ----*/
+.Gato-skt{
+  animation: Skt_Gato-10s 10s linear 1;
+}
+.Gato-skt7{
+  animation: Skt7_Gato-10s 10s linear 1;
+}
+/* ---- Sombra-gato ----*/
+.Sombra-gato-skt{
+  animation: Skt_Smbr-gato-10s 10s linear 1;
+}
+.Sombra-gato-skt7{
+  animation: Skt7_Smbr-gato-10s 10s linear 1;
+}
+/* ---- Skate ----*/
+.Skate-skt{
+  animation: Skt_Skate-10s 10s linear 1;
+}
+.Skate-skt7{
+  animation: Skt7_Skate-10s 10s linear 1;
+}
+/* ---- Sombra-gato ----*/
+.Sombra-skate-skt{
+  animation: Skt_Smbr-Skate-10s 10s linear 1;
+}
+.Sombra-skate-skt7{
+  animation: Skt7_Smbr-Skate-10s 10s linear 1;
+}
+/* ---- Items ----*/
+.item-9M-skt{
+  position: absolute;
+  animation: Skt_Item-9M-10s 10s linear 1;
+}
+.item-9B-skt{
+  position: absolute;
+  animation: Skt_Item-9B-10s 10s linear 1;
+}
+.item-9M-skt7{
+  position: absolute;
+  animation: Skt7_Item-9M-10s 10s linear 1;
+}
+.item-9B-skt7{
+  position: absolute;
+  animation: Skt7_Item-9B-10s 10s linear 1;
+}
+
+
+
+/* ---- Animaciones BURBUJAS ----*/
+/* ---- Ojos-burbuja ----*/
+.ojo-burb{
+  animation: Burb_Ojos-6s 6s linear 1;
+}
+.pupila-burb{
+  animation: Burb_Pupilas-6s 6s linear 1;
+}
+.ojo-burb-after{
+  animation: Burb_Ojos-after-10s 10s linear 1;
+}
+.pupila-burb-after{
+  animation: Burb_Pupilas-after-10s 10s linear 1;
+}
+/* ---- Gato-up ----*/
+.Gato-burb{
+  animation: Burb_Gato-up-10s 10s 1 ease-in-out;
+}
+/* ---- Sombra-gato ----*/
+.Sombra-gato-burb{
+  animation: Burb_Smbr-gato-10s 10s ease-in-out 1;
+}
+/* ---- Burbuja-gato ----*/
+.bur-gt_anim{
+  animation: Burb_b-wobble-10s 10s 1 ease-in-out;
+}
+.b-gt_anim{
+  animation: Burb_b-up-10s 10s 1 ease-in-out;
+}
+
+
+
+/* ---- Animaciones POZO ----*/
+/* ---- Ojos-Pozo ----*/
+.ojo-pozo{
+  animation: Pozo_Ojos-10s 10s linear 1;
+}
+.pupila-pozo{
+  animation: Pozo_Pupilas-10s 10s linear 1;
+}
+/* ---- Gato-Pozo ----*/
+.Gato-pozo{
+  animation: Pozo_Gato-10s 10s linear 1;
+}
+.item-2-pozo{
+  position: absolute;
+  animation: Pozo_Item-2-10s 10s linear 1;
+}
+.item-5-pozo{
+  position: absolute;
+  animation: Pozo_Item-5-10s 10s linear 1;
+}
+.item-9M-pozo{
+  position: absolute;
+  animation: Pozo_Item-9M-10s 10s linear 1;
+}
+.item-9B-pozo{
+  position: absolute;
+  animation: Pozo_Item-9B-10s 10s linear 1;
+}
+/* foto avión*/
+.Gato-salto{
+  animation: Salto_Gato-10s 10s linear 1;
+}
+.item-2-salto{
+  position: absolute;
+  animation: Salto_Item-2-10s 10s linear 1;
+}
+.item-5-salto{
+  position: absolute;
+  animation: Salto_Item-5-10s 10s linear 1;
+}
+.item-9M-salto{
+  position: absolute;
+  animation: Salto_Item-9M-10s 10s linear 1;
+}
+.item-9B-salto{
+  position: absolute;
+  animation: Salto_Item-9B-10s 10s linear 1;
+}
+/* ---- Sombra-gato ----*/
+.Sombra-gato-pozo{
+  animation: Pozo_Smbr-gato-10s 10s linear 1;
+}
+/* foto avión*/
+.Sombra-gato-salto{
+  animation: Salto_Smbr-gato-10s 10s linear 1;
+}
+/* ---- Pozo ----*/
+.Agujero-pozo{
+  animation: Agujero-10s 10s linear 1;
+}
+/* ---- Tapa-Pozo ----*/
+.Tapa-Pozo_anim{
+  animation: Tapa-Pozo-10s 10s linear 1;
+}
+
+
+
+/* ---- Animaciones GLOBO ----*/
+/* ---- Cabeza-Globo ----*/
+.cabeza-globo{
+  animation: Globo_Cabeza-15s 15s 1;
+}
+.hat-7y8-globo{
+  position: absolute;
+  animation: Globo_Hat-7y8-15s 15s 1;
+}
+.hat-3y4y11-globo{
+  position: absolute;
+  animation: Globo_Hat-3y4y11-15s 15s 1;
+}
+.hat-12-globo{
+  position: absolute;
+  animation: Globo_Hat-12-15s 15s 1;
+}
+/* ---- Bigotes-Globo ----*/
+.cont-bigotes-globo{
+  animation: Globo_Bigotes-15s 15s 1;
+}
+/* ---- Ojos-Globo ----*/
+.cont-ojos-globo{
+  animation: Globo_Cont-Ojos-15s 15s 1;
+}
+
+/* ---- Orejas-Globo ----*/
+.cont-orejas-globo{
+  animation: Globo_Cont-Orejas-15s 15s 1;
+}
+.oreja1-globo{
+  animation: Globo_Oreja1-15s 15s 1;
+}
+.oreja2-globo{
+  animation: Globo_Oreja2-15s 15s 1;
+}
+/* ---- Gato-Globo ----*/
+.Gato-globo{
+  animation: Globo_Gato-15s 15s linear 1;
+}
+/* ---- Sombra-Globo ----*/
+.Sombra-gato-globo{
+  animation: Globo_Smbr-gato-15s 15s linear 1;
+}
+
+
+
+
+/* ---- Animaciones OVNI ----*/
+/* ---- Ovni ----*/
+.Ovni-Pre-anim{
+  animation: Ovni_Pre-3s 3s ease-in-out 1;
+} 
+.Ovni-anim{
+  animation: Ovni-20s 20s ease-in-out 1;
+}
+/* ---- Rayo-Ovni ----*/ 
+.Rayo-ovni-anim{
+  animation: Ovni_Rayo-20s 20s linear 1;
+}
+/* ---- Ojos-Ovni ----*/
+.o1-ovni{
+  animation: Ovni_Ojo1-16s 16s linear 1;
+}
+.o2-ovni{
+  animation: Ovni_Ojo2-16s 16s linear 1;
+}
+.pupila-ovni{
+  animation: Ovni_Pupilas-16s 16s linear 1;
+}
+/* ---- Gato-Ovni ----*/
+.Gato-ovni{
+  animation: Ovni_Gato-20s 20s ease-in-out 1;
+}
+/* ---- Sombra-Gato-Ovni ----*/
+.Sombra-gato-ovni{
+  animation: Ovni_Smbr-gato-20s 20s ease-in-out 1;
+}

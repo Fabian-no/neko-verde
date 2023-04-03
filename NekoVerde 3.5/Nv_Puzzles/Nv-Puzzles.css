@@ -1,0 +1,363 @@
+@import url(../z-Normaliz.css);
+
+/* --- TIPOGRAFIA ---*/
+body{
+  font-family: "PT Serif", sans-serif;
+}
+
+h1{
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+h3{
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 700;
+}
+h4{
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 700;
+}
+h5{
+  font-family: Nunito, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+}
+p{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+/*--  MIN-WIDTH  --*/
+@media (min-width: 480px){
+  h3{
+    font-size: 26px;
+    line-height: 38px;
+  }
+  h4{
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 768px){
+  h1{
+    font-size: 37px;
+    line-height: 47px;
+  }
+  h3{
+    font-size: 22px;
+    line-height: 33px;
+  }
+  h4{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  h5{
+    font-size: 16px;
+    line-height: 21px;
+  }
+  p{
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+@media (min-width: 1240px){
+  h1{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h3{
+    font-size: 31px;
+    line-height: 44px;
+  }
+  h4{
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+/*
+icon-info
+*/
+/*-- Boton N{v} --*/
+.BotNv{
+  cursor: pointer;
+  position: fixed;
+  background: #ffffff;
+  bottom: 6px;
+  right: 0;
+  opacity: .7;
+  z-index: 10;
+}
+.BotNv>a{
+  width: 100%;
+  height: 100%;
+}
+.BotNv>a>h3{
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom: 5px;
+  padding: 5px 8px;
+  color: #353535;
+}
+.BotNv>a>h3>span{
+  color: #407c44;
+}
+
+@media (min-width: 450px){
+  .BotNv{
+    bottom: unset;
+    right: unset;
+    top: 26px;
+    left: 0;
+  }
+}
+@media (min-width: 600px){
+  .BotNv{
+    top:28px;}
+  .BotNv>a>h3{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 768px){
+  .BotNv{
+    top: 33px;}
+  .BotNv>a>h3{
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 6px;
+  }
+}  
+@media (min-width: 1240px){
+  .Cont-Titulo{
+    padding: 35px 0 20px;}
+}  
+
+
+/* --- GENERALES ---*/
+body{
+  width: 100%;
+  height: 100%;
+}
+.Container{
+  position: relative;
+  background-color: #c8d4bc;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* FLEX-MARCO */
+.flex-marco{
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+/* fin Generales*/
+
+
+
+/* --- MARCO --- */
+
+/*Cont-Titulo*/
+.Cont-Titulo{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 10px;
+}
+h1{
+  color: #444444;
+  text-shadow: 7px 7px 5px #9b9b9b;
+  text-align: center;
+  margin: 5px 10px;
+}
+.BotInfo{
+  cursor: pointer;
+  background: none;
+  color: #505050;
+  border-radius: 50%;
+  font-size: 23px;
+  line-height: 26px;
+  width:26px;
+  height:26px;
+  box-shadow: 0px 0px 2px #242424;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.BotInfo>.icon-info{
+  margin-left: -3.5px;
+  margin-top: 0px;
+}
+.BotInfo_ON{
+  background: #809b72;
+  color: #ebebe5;
+  box-shadow: 0px 0px 8px #414141;
+}
+@media (min-width: 480px){
+  .Cont-Titulo{
+    padding: 20px 0 10px;}
+}
+@media (min-width: 600px){
+  .Cont-Titulo{
+    padding: 25px 0 15px;}
+}
+@media (min-width: 768px){
+  .Cont-Titulo{
+    padding: 30px 0 15px;}
+}  
+@media (min-width: 1240px){
+  .Cont-Titulo{
+    padding: 35px 0 20px;}
+}  
+
+
+/*Cont-Info*/
+.Cont-Info{
+  width: 100%;
+  display: block;
+  
+  margin: auto;
+  padding: 0px 20px;
+}
+
+.Cont_WhenSelect{
+  max-width: 590px;
+}
+.Cont_WhenDrag{
+  max-width: 540px;
+}
+
+.Texto-Info{
+  border: 1px solid #bac9b4;
+  width: 100%;
+  background: #f2f6f0;
+  padding: 10px 15px 5px; 
+  box-shadow: 5px 5px 5px #6b6b6b;
+  display: none;
+}
+
+.Texto-Info>h5{
+  margin-bottom: 4px;
+  color: #444444;
+}
+.Texto-Info>p{
+  margin-bottom: 6px;
+  color: #666666;
+}
+.Texto-Info span{
+  font-size: 90%;
+  line-height: 90%;
+}
+
+
+
+/* Marco puzzles */
+.Marco{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 5% 30px;
+}
+.Caja-Puzzle{
+  width: 100%;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 7px 7px 5px #6b6b6b;
+}
+
+/*Img-puzzle*/
+.Img-Puzzle{
+  position: relative;
+  width: 100%;
+  padding: 5%;
+  background: #ffffff;
+  border: 1px solid #a59f9f;
+  filter: grayscale(20%);
+}
+
+
+.Tapa-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.flex-tapaImg{
+  width: 100%;
+  height: 100%;
+  background: #837a70;
+  background: #41473ca9;
+  background-color: #494e46ad;
+  color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+}
+.flex-tapaImg>a{
+  color: #e0e0e0;
+  font-weight: 400;
+  transition: color .1s;
+}
+.flex-tapaImg>a:hover{
+  color: #fbfbfb;
+}
+.flex-tapaImg>a>h4{
+  font-weight: 400;
+}
+.flex-tapaImg>a>h4>span{
+  font-size: 80%;
+}
+
+/*Texto-puzzle*/
+.Texto-Puzzle{
+  padding: 2% 6%;
+  border: 1px solid #a59f9f;
+  border-top: 0px;
+  color: #3f3f3c;
+}
+.Texto-Puzzle span{
+  font-size: 60%;
+}
+.Texto-Puzzle a{
+  color: #3f3f3c;
+  transition: all .1s;
+}
+.Texto-Puzzle a:hover{
+  color: #6e6e30;
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px){
+  .Cont_WhenSelect{
+    max-width: 620px;
+  }
+  .Cont_WhenDrag{
+    max-width: 570px;
+  }
+  .Marco{
+    padding: 20px 2%;
+  }
+  .Caja-Puzzle{
+    width: 45%;
+  }
+}

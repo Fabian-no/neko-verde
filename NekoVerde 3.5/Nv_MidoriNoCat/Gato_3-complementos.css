@@ -1,0 +1,465 @@
+
+/*--- COMPLEMENTOS ---*/
+
+/* - bufanda 1 - */
+.dress-1{
+  position: absolute;
+  top: 56px;
+  left: 25px;
+  background-image: url(img/01-dress.png);
+  background-size: cover;
+  width: 95px;
+  height: 158px;
+  z-index: -2;
+} 
+
+/* - mate 2 - */
+.item-2{
+  position: absolute;
+  bottom: calc(50% - 175px);
+  left: calc(50% - 158px);
+  background-image: url(img/02-item.png);
+  background-size: cover;
+  width: 115px;
+  height: 170px;
+  z-index: 80;
+} 
+
+/* - sombrero-paja 3 - */
+.hat-3{
+  position: absolute;
+  bottom: -49px;
+  left: -39px;
+  background-image: url(img/03-hat.png);
+  background-size: cover;
+  width: 170px;
+  height: 83px;
+  z-index: 33;
+}
+
+/* - turbante 4 - */
+.hat-4{
+  position: absolute;
+  bottom: -66px;
+  left: -23px;
+  bottom: -49px;
+  left: -39px;
+  background-image: url(img/04-hat.png);
+  background-size: cover;
+  width: 155px;
+  height: 75px;
+  z-index: 33;
+}
+
+/* - mojito 5 - */
+.item-5{
+  position: absolute;
+  bottom: calc(50% - 167px);
+  left: calc(50% - 160px);
+  background-image: url(img/05-item.png);
+  background-size: cover;
+  width: 115px;
+  height: 157px;
+  z-index: 80;
+} 
+
+/* - poncho 6 - */
+.dress-6{
+  position: absolute;
+  top: 62px;
+  left: 20px;
+  background-image: url(img/06-dress.png);
+  background-size: cover;
+  width: 190px;
+  height: 155px;
+  z-index: 31;
+} 
+
+/* - piloto 7 - */
+.hat-7{
+  position: absolute;
+  bottom: -45px;
+  left: -6px;
+  background-image: url(img/07-hat.png);
+  background-size: cover;
+  width: 110px;
+  height: 75px;
+  z-index: 33;
+}
+
+/* - sombrero 8 - */
+.hat-8{
+  position: absolute;
+  bottom: -45px;
+  left: -6px;
+  background-image: url(img/08-hat.png);
+  background-size: cover;
+  width: 110px;
+  height: 95px;
+  z-index: 33;
+}
+
+/* - mesa y birra 9 - */
+.item-9M{
+  position: absolute;
+  bottom: calc(50% - 165px);
+  left: calc(50% - 160px);
+  background-image: url(img/09M-item.png);
+  background-size: cover;
+  width: 120px;
+  height: 100px;
+  z-index: 80;
+} 
+.item-9B{
+  position: absolute;
+  bottom: calc(50% - 105px);
+  left: calc(50% - 128px);
+  background-image: url(img/09B-item.png);
+  background-size: cover;
+  width: 110px;
+  height: 110px;
+  z-index: 80;
+} 
+
+/* - pajarita 10 - */
+.dress-10{
+  position: absolute;
+  top: 86px;
+  left: 28px;
+  background-image: url(img/10-dress.png);
+  background-size: cover;
+  width: 57px;
+  height: 30px;
+  z-index: -2;
+} 
+
+/* - vaquero 11 - */
+.hat-11{
+  position: absolute;
+  bottom: -49px;
+  left: -39px;
+  background-image: url(img/11-hat.png);
+  background-size: cover;
+  width: 165px;
+  height: 80px;
+  z-index: 33;
+}
+
+/* - snow 12 -  */
+.dress-12{
+  position: absolute;
+  top: 100px;
+  left: 69px;
+  background-image: url(img/12-dress.png);
+  background-size: cover;
+  width: 120px;
+  height: 125px;
+  z-index: -3;
+}  
+.hat-12{
+  position: absolute;
+  bottom: -126px;
+  left: -38px;
+  background-image: url(img/12-hat.png);
+  background-size: cover;
+  width: 178px;
+  height: 139px;
+  z-index: 32;
+}  
+
+/* hats con snow*/
+.hat-3S{
+  background-image: url(img/03S-hat.png);
+}
+.hat-4S{
+  background-image: url(img/04S-hat.png);
+}
+.hat-7S{
+  background-image: url(img/07S-hat.png);
+}
+.hat-8S{
+  background-image: url(img/08S-hat.png);
+}
+.hat-11S{
+  background-image: url(img/11S-hat.png);
+}
+
+
+
+
+/*--- OBJETOS DE ANIMACIONES ---*/
+
+/*  ----  MOSCA  ---- */
+.Caja-Mosca{
+  position: absolute;
+  width: 98%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: visible;
+}
+.Mosca-A{
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: scale(1);
+  z-index: 11;
+  opacity: 0;
+}
+.Mosca-B{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.Mosca-F{
+  width: 100%;
+  height: auto;
+  transform: rotate(0deg);
+}
+@media only screen and (max-width: 767px){
+  .Mosca-A{
+    top: 55%;
+  }
+}
+@media only screen and (max-width: 480px){
+  .Caja-Mosca{
+    left: -20px;
+  }
+  .Mosca-A{
+    top: 55%;
+  }
+}
+
+
+
+/*  ----  SKATE ---- */
+.Caja-Skate{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.Skate{
+  position: absolute;
+  bottom: calc(50% - 133px);
+  left: calc(50% - 255px);
+  left: calc(50% - 0px);
+  opacity: 0;
+
+}
+
+.Sombra-skate{
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: -10;
+  bottom: calc(50% - 161px);
+  left: calc(50% - 100px);
+  background: #00000048;
+  box-shadow: 0px 0px 5px #242424d8;
+  opacity: 0;
+  /*ver color y opacidad*/
+}
+
+/*partes del skate*/
+.Tabla{
+  position: absolute;
+  width: 130px;
+  height: 5px;
+  border-radius: 5px;
+  top: -7px;
+  left: -65px;
+}
+.tabla-del{
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  top: -5px;
+  left: -26px;
+  transform: rotate(20deg);
+}
+.tabla-tras{
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 5px;
+  top: -5px;
+  left: 126px;
+  transform: rotate(-20deg);
+}
+.Ruedas{
+  position: absolute;
+  top: 0px;
+  left: -65px;
+}
+.rueda1{
+  position: absolute;
+  border: 6px solid #000000; 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+.rueda2{
+  position: absolute;
+  border: 6px solid #000000; 
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 0px;
+  left: 110px;
+}
+.Tabla, .tabla-del, .tabla-tras{
+  background: #856d4d;
+  background: linear-gradient(#4e4230,#c5a982);
+}
+.rueda1, .rueda2{
+  border-color: #3e4b3e;
+  background: #cfcfcf;
+}
+
+
+
+
+
+/*  ----  BURBUJAS en Gato_burbujas.css ----  */
+.burb-gato{
+  position: absolute;
+  left: calc(50% - 150px);
+  bottom: calc(55% + 95px);
+  z-index: 11;
+}
+.bur-gt{
+  position: absolute;
+  opacity: 1;
+}
+.b-gt{
+  position: absolute;
+  border: 1px solid #3f6c7291;
+  border: 1px solid #688488;
+  background: radial-gradient(#ffffff6c, #5ca5c742);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  opacity: 0;
+  /*ver color y opacidad*/
+}
+
+
+
+
+
+
+/*  ----  POZO ---- */
+.Caja-Pozo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+.Agujero{
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  /* width: 270px;
+  height: 40px;  */
+  border-radius: 50%;
+  bottom: calc(50% - 210px);
+  bottom: calc(50% - 215px);
+  left: calc(50% - 255px);
+  opacity: 1;
+  background: #242424;
+}
+
+
+
+
+
+/*  ----  OVNI ---- */
+.Caja-Ovni{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; 
+}
+.Ovni{
+  position: absolute;
+  top: calc(50% - 230px);
+  left: calc(50% + 510px);
+  /* left: calc(50% + 10px); */
+  opacity: 1;
+  z-index: 9;
+}
+.P1-ovni{
+  position: absolute;
+  width: 80px;
+  height: 105px;
+  top: 2px;
+  left: -39px;
+  border-radius: 48%; 
+  -webkit-clip-path: ellipse(72px 75px at 38px 0px);
+          clip-path: ellipse(72px 75px at 38px 0px);
+  z-index: 20;
+}
+.Base-ovni{
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  top: 42px;
+  left: -75px;
+  border-radius: 50%;
+  z-index: 19; 
+}
+.Linea-ovni{
+  border: 2px solid;
+  position: absolute;
+  width: 160px;
+  height: 75px;
+  top: 31px;
+  left: -80px;
+  border-radius: 50%; 
+  -webkit-clip-path: polygon(3% 50%, 97% 50%, 97% 100%, 3% 100%);
+          clip-path: polygon(3% 50%, 97% 50%, 97% 100%, 3% 100%);
+  z-index: 20;
+}
+.Rayo-ovni{
+  position: absolute;
+  width: 440px;
+  height: 0;
+  /* height: 300px; */
+  top: 105px;
+  left: -220px;
+  border-radius: 50%;
+  -webkit-clip-path: polygon(45% 0%, 55% 0%, 75% 100%, 25% 100%);
+          clip-path: polygon(45% 0%, 55% 0%, 75% 100%, 25% 100%);
+  z-index: 18;
+}
+
+
+/*colores OVNI*/
+.P1-ovni{
+  background: #c8dae0;
+  opacity: .5;
+}
+.Base-ovni{
+  background: #2a4247;
+}
+.Linea-ovni{
+  border-color: #a5aaaa;
+}
+.Rayo-ovni{
+  background: #d3d633;
+  opacity: .4;
+}  
+
+
+

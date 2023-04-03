@@ -1,0 +1,137 @@
+
+/*  CAJA 4 - espiral romboide */
+
+.CG4{
+  position: absolute;
+  top: calc(50% - 30%);
+  left: calc(50% - 30%);
+  /* background: #0b2c5700; */
+  width: 100%;
+  height: 100%;
+}
+.DG4{
+  position: absolute;
+}
+.OrbG4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #68976b;
+  background: #0b570f96;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateX(70deg);
+          transform: rotateX(70deg);
+  opacity: 0;
+}
+.OrbG4-B{
+  background: #959c75;
+  background: #49570b96;
+}
+.OrbG4-C{
+  background: #9e7f6b;
+  background: #57290b96;
+}
+.OrbG4-D{
+  background: #9b7186;
+  background: #570b3196;
+}
+.OrbG4-E{
+  background: #6d7d92;
+  background: #0b2c5796;
+}
+/*colores lisos*/
+.colores{
+  background: #68976b;
+  background: #959c75;
+  background: #9e7f6b;
+  background: #9b7186;
+  background: #6d7d92;
+}
+
+/* Caja4 - Animacion */
+.CG4{
+  -webkit-animation: CG4 7s linear infinite;
+          animation: CG4 7s linear infinite;
+}
+.DG4{
+  -webkit-animation: DG4 7s linear infinite;
+          animation: DG4 7s linear infinite;
+}    
+.OrbG4{
+  -webkit-animation: OrbG4 7s linear infinite;
+          animation: OrbG4 7s linear infinite;
+}
+.CG4-B, .DG4-B, .OrbG4-B{
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}  
+.CG4-C, .DG4-C, .OrbG4-C{
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}  
+.CG4-D, .DG4-D, .OrbG4-D{
+  -webkit-animation-delay: 4.2s;
+          animation-delay: 4.2s;
+}  
+.CG4-E, .DG4-E, .OrbG4-E{
+  -webkit-animation-delay: 5.6s;
+          animation-delay: 5.6s;
+}
+
+@-webkit-keyframes CG4{
+  0%{top: 35%;}
+  50%{top: 15%;}
+  100%{top: -35%;}
+}
+
+@keyframes CG4{
+  0%{top: 35%;}
+  50%{top: 15%;}
+  100%{top: -35%;}
+}
+@-webkit-keyframes DG4{
+  0%{width: 0%; height: 0%; top: 50%; left: 30%;}
+  50%{width: 70%; height: 70%; top: 0; left: -5%;}
+  100%{width: 0%; height: 0%; top: 50%; left: 30%}
+}
+@keyframes DG4{
+  0%{width: 0%; height: 0%; top: 50%; left: 30%;}
+  50%{width: 70%; height: 70%; top: 0; left: -5%;}
+  100%{width: 0%; height: 0%; top: 50%; left: 30%}
+}
+@-webkit-keyframes OrbG4{
+  0%{opacity: 0; -webkit-transform: rotateX(70deg) rotate(0deg); transform: rotateX(70deg) rotate(0deg);}
+  20%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 0; -webkit-transform: rotateX(70deg) rotate(360deg); transform: rotateX(70deg) rotate(360deg);}
+}
+@keyframes OrbG4{
+  0%{opacity: 0; -webkit-transform: rotateX(70deg) rotate(0deg); transform: rotateX(70deg) rotate(0deg);}
+  20%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 0; -webkit-transform: rotateX(70deg) rotate(360deg); transform: rotateX(70deg) rotate(360deg);}
+}
+
+
+
+
+/* .OrbG4{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 150%;
+  transform: rotateX(70deg);
+  opacity: 0;
+}
+@keyframes CG4{
+  0%{top: 45%;}
+  50%{top: 5%;}
+  100%{top: -45%;}
+}
+@keyframes DG4{
+  0%{width: 0%; height: 0%; top: 50%; left: 30%;}
+  50%{width: 70%; height: 70%; top: 0; left: -25%;}
+  100%{width: 0%; height: 0%; top: 50%; left: 30%}
+} */

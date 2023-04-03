@@ -1,0 +1,137 @@
+/*--  FOOTER   --*/
+footer{
+  background: #142718;
+}
+.Wrap-foot{
+  padding: 60px 0 50px;
+}
+.Caja-foot{
+  width: 90%;
+}
+.Caja-foot>.Box{
+  width: 33.333%;
+  padding: 0 10px;
+}
+.Caja-foot .Texto{
+  width: 80%;
+}
+footer h4{
+  margin: 0px auto 15px;
+  color: #d3c2b4;
+}           
+footer p{
+  color: #8d826f;
+}
+
+
+/*todas las a del footer*/
+footer a{
+  text-decoration: none;
+  color: #788d25;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: #40851c;
+}
+/*todos los 'p' y 'a' del footer*/
+
+footer .iconos>p{
+  line-height: 18px;
+  letter-spacing: 10px;
+}
+footer .iconos>p>a{
+  font-size: 19px;
+}
+.Box-logo>img{
+  width: 200px;
+  margin: 0;
+}
+
+
+/*boton-up*/
+.Boton-Up{
+  display: block;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 40px;
+  z-index: 300;
+}
+.Boton-Up>a{
+  width: 100%;
+  height: 100%;
+}
+.Boton-Up>a>.raya{
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: #788d25;
+  border-radius: 4px;
+  top: 18px;
+}
+.Boton-Up>a>.raya-left{
+  transform: rotate(-45deg);
+  left: 5px;
+}
+.Boton-Up>a>.raya-right{
+  transform: rotate(45deg);
+  right: 5px;
+}
+.Boton-Up>a:hover>.raya{
+  background-color: #40851c;
+} 
+
+
+/*--- @media - FOOTER ---*/
+@media screen and (max-width: 1239px){
+  .Caja-foot{
+    max-width: 1000px;
+  }
+  .Box-logo>img{
+    width: 180px;
+  }  
+}  
+@media screen and (max-width: 959px){
+  .Caja-foot{
+    max-width: 790px;
+  }
+  .Box-logo>img{
+    width: 160px;
+  }  
+}
+@media screen and (max-width: 767px){
+  .Wrap-foot{
+    padding: 30px 0 30px;
+  }
+  .Caja-foot{
+    flex-direction: column;
+    margin: 0 30px;
+  }
+  .Caja-foot>.Box-logo{
+    order: -2;
+  }
+  .Caja-foot>.Box{
+    border: 0px solid red;
+    width: 100%;
+    padding: 20px 20px 0;
+  }
+  .Box-logo>img{
+    width: 170px;
+    margin: 0 20px 20px;
+  }
+}
+
+/*--- copy ---*/
+footer>.Copy{
+  border-top: 1px solid #bcaf971e;
+  padding: 30px 30px;
+  text-align: center;
+}
+.Copy>p{
+  font-weight: 400;
+  margin: 0;
+}
+.Copy>p>a{
+  margin-left: 3px;
+}

@@ -1,0 +1,166 @@
+    /*--- pagina 4 - DESIGNS ---*/
+
+/*--- DESIGNS(4) - HEADER 
+.CF-Resp---*/
+.CF-Resp>.Ds-F1{
+  background-image: url('img/designs-header_1920x1079.jpg');
+}
+
+/*--- DESIGNS(4) - SECTION 1 ---*/
+.DsS1{
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.DsS1>.Caja-h3>h3{
+  width: 70%;
+}
+/* Generales y Plano 1*/
+.DsS1>.Caja-P{
+  margin-top: 40px;
+}
+.DsS1>.Caja-P>.Plano{
+  width: 60%;
+  height: 520px;
+}
+.DsS1>.Caja-P>.Plano>.Foto{
+  width: 93%;
+  height: auto;
+  top: 6%;
+  left: 0%;
+}
+.DsS1>.Caja-P>.Plano>.Foto>.Fondo{
+  background: #122416;
+  width: 50%;
+  height: 125%;
+  top: -8%;
+  right: -8%;
+}
+.DsS1>.Caja-P>.Plano>.Foto>img{
+  position: relative;
+  cursor: pointer;
+}
+.DsS1>.Caja-P>.Texto{
+  width: 40%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+}
+.DsS1>.Caja-P>.Texto>ul{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  list-style: circle;
+}
+.DsS1>.Caja-P>.Texto>ul>li{
+  margin-bottom: 11px;
+}
+/*plano 2*/
+.DsS1>.P2{
+  margin-top: 60px;
+}
+.DsS1>.P2>.Plano{
+  left: 4.2%;
+}
+.DsS1>.P2>.Plano>.Foto>.Fondo{
+  right: 0;
+  left: -8%;
+}
+.DsS1>.P2>.Texto{
+  padding-left: 6%;
+  padding-right: 0%;
+}
+/*agrandar fotos*/
+.Cont-Sombra-P{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 499;
+}
+.Sombra-Planos{
+  background: #050f019f;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.Sombra-Planos>img{
+  max-width: 90vw;
+  max-height: 90vh;
+  /* margin: 5vh auto; */
+}
+
+/*--- @media - DESIGNS(4) - Section 1 ---*/
+@media screen and (max-width: 1239px){
+  .DsS1>.Caja-P>.Plano{
+    height: 421px;
+  }
+  .DsS1>.Caja-P>.Texto{
+    padding-top: 2%;
+  }
+}
+@media screen and (max-width: 959px){
+  .DsS1{
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .DsS1>.Caja-P>.Plano{
+    height: 330px;
+  }
+  .DsS1>.Caja-P>.Texto{
+    padding-top: 0%;
+  }
+  .DsS1>.Caja-P>.Texto>ul>li{
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 767px){
+  .DsS1{
+    padding-bottom: 40px;
+  }
+  .DsS1>.Caja-h3>h3{
+    width: 90%;
+  }
+  .DsS1>.Caja-P{
+    margin-top: 30px;
+  }
+  .DsS1>.Caja-P{
+    display: block;
+  }
+  .DsS1>.P2>.Plano{
+    left: 7.2%;
+  }
+  /*ratio= 1.52143 - 0.65727*/
+  .DsS1>.Caja-P>.Plano{
+    width: 100%;
+    height: calc((-60px + (93vw * 0.65727)) * 1.29);
+  }
+  .DsS1>.Caja-P>.Plano>.Foto{
+    width: 93%;
+    height: auto;
+    top: 6%;
+    left: 0%;
+  }
+  .DsS1>.Caja-P>.Plano>.Foto>.Fondo{
+    background: #122416;
+    width: 50%;
+    height: 125%;
+    top: -8%;
+    right: -8%;
+  }
+  .DsS1>.Caja-P>.Texto{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .DsS1>.Caja-P>.Texto>ul>li{
+    margin-bottom: 7px;
+  }
+}
+@media screen and (max-width: 480px){
+  .DsS1>.Caja-h3>h3{
+    padding: 0 0 0 10px;
+  }
+}
